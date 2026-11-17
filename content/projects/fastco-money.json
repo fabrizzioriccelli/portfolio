@@ -1,0 +1,74 @@
+{
+  "slug": "fastco-money",
+  "universe": "marketing",
+  "also": [],
+  "order": 15,
+  "title": "FastCo Money",
+  "kind": "Profissional",
+  "context": "Fast Company × Santander · Conteúdo de marca",
+  "year": "set 2024 – fev 2025",
+  "role": "Wireframe da newsletter e início do projeto",
+  "stack": [
+    "Branded content",
+    "Newsletter",
+    "Wireframe",
+    "Parceria de mídia",
+    "Estratégia de marca"
+  ],
+  "keywords": [
+    "branded content",
+    "parceria de mídia",
+    "newsletter",
+    "wireframe",
+    "UX",
+    "Fast Company",
+    "inovação"
+  ],
+  "summary": "Projeto da Fast Company em parceria com o Santander para mostrar inovação e iniciativas transformadoras. Acompanhei o início do projeto e montei o wireframe da newsletter.",
+  "notice": "Projeto de parceria entre Fast Company e Santander, com várias pessoas envolvidas. Esta página descreve apenas a minha participação. Marcas pertencem aos seus titulares.",
+  "glance": [
+    {
+      "label": "O projeto",
+      "text": "A FastCo Money é um projeto da Fast Company em parceria com o Santander para apresentar inovação e iniciativas transformadoras."
+    },
+    {
+      "label": "O desafio",
+      "text": "Dar forma a um produto editorial novo, a newsletter, desde a estrutura do conteúdo."
+    },
+    {
+      "label": "Minha parte",
+      "text": "Acompanhei o início do projeto e montei o wireframe da newsletter."
+    }
+  ],
+  "videos": [],
+  "sections": [],
+  "gallery": [],
+  "diagrams": [],
+  "timeline": [],
+  "contribution": {
+    "lead": "Acompanhei o início do projeto, num time com contribuição de Letícia, Thatiana e outras pessoas.",
+    "items": [
+      [
+        "Wireframe",
+        "Estrutura da newsletter: hierarquia de conteúdo e organização das seções."
+      ],
+      [
+        "Acompanhamento",
+        "Participação no início do projeto com a Fast Company."
+      ]
+    ]
+  },
+  "code": null,
+  "facts": [
+    [
+      "Parceiro",
+      "Fast Company"
+    ],
+    [
+      "Formato",
+      "Newsletter"
+    ]
+  ],
+  "links": [],
+  "logo": "santander.svg"
+}

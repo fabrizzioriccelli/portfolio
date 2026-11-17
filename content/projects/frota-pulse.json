@@ -1,0 +1,135 @@
+{
+  "slug": "frota-pulse",
+  "universe": "tecnologia",
+  "also": [],
+  "order": 2,
+  "title": "Frota Pulse",
+  "kind": "Acadêmico",
+  "context": "FIAP × Sem Parar Empresas · Enterprise Challenge, Sprint 1",
+  "year": "2026",
+  "role": "Estruturação da entrega, em grupo de cinco",
+  "stack": [
+    "Python",
+    "pandas",
+    "NumPy",
+    "CUSUM",
+    "LMDI",
+    "Dados sintéticos"
+  ],
+  "summary": "Especificação de uma calculadora que consolida os custos de uma frota, aponta ineficiências com evidência e estima a economia em reais, com uma faixa de confiança em cada número.",
+  "notice": "Projeto acadêmico de planejamento (Sprint 1): não há aplicação implementada, e os números vêm de três frotas fictícias. Frota Pulse é um nome provisório, sem relação com marcas oficiais.",
+  "glance": [
+    {
+      "label": "Problema",
+      "text": "“O gestor sabe quanto gastou, mas não onde está perdendo.” Combustível, manutenção, pedágio, multas e impostos chegam em planilhas, PDFs, fotos e extratos diferentes."
+    },
+    {
+      "label": "Resposta",
+      "text": "Uma calculadora web que recebe os documentos como estão, consolida o custo total, detecta desvios e entrega um plano de ação com economia estimada em reais."
+    },
+    {
+      "label": "Diferencial",
+      "text": "Dizer quanto se pode confiar em cada número: toda estimativa é uma faixa provável, com a parte que vem de documento e um selo de confiança."
+    }
+  ],
+  "videos": [],
+  "demo": null,
+  "cover": {
+    "src": "capa-frota-pulse.png",
+    "w": 1600,
+    "h": 640
+  },
+  "sections": [
+    {
+      "title": "Decisões técnicas",
+      "list": [
+        "Cálculos financeiros determinísticos e versionados. A IA lê documentos, classifica e explica, mas não calcula valores.",
+        "Nenhum valor sem origem: cada número guarda arquivo, linha e status (observado, corrigido, imputado, estimado ou não disponível).",
+        "Custo alto não é desperdício. O custo de combustível é decomposto em atividade, consumo e preço (LMDI), e quedas de rendimento são detectadas com CUSUM.",
+        "Comparação entre veículos parecidos com z-score robusto (mediana e MAD), que resiste a valores extremos.",
+        "Documento é dado, não instrução: texto extraído de PDFs e imagens não altera o comportamento do sistema.",
+        "Dados sintéticos com gabarito: 21.656 despesas de três frotas fictícias e 34 situações-problema planejadas para testar as regras."
+      ]
+    },
+    {
+      "title": "Estratégia de IA",
+      "paragraphs": [
+        "A regra central é usar o método mais simples que resolve. Regras e estatística robusta vêm antes de modelos complexos, e um modelo só substitui uma regra se superá-la na mesma avaliação. Cada componente de IA (extração de documentos, classificação de despesas, detecção de anomalias e calibração de estimativas) tem métrica e limiar de aceite definidos antes do desenvolvimento."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "wf-01-primeira-estimativa.png",
+      "w": 1440,
+      "h": 900,
+      "caption": "Wireframe: a primeira estimativa com três perguntas."
+    },
+    {
+      "src": "wf-02-diagnostico-gestor.png",
+      "w": 1440,
+      "h": 1180,
+      "caption": "Wireframe: diagnóstico para o gestor de frota."
+    },
+    {
+      "src": "wf-03-relatorio-executivo.png",
+      "w": 1100,
+      "h": 1200,
+      "caption": "Wireframe: relatório executivo de uma página."
+    }
+  ],
+  "diagrams": [
+    {
+      "src": "cusum-c-v07.svg",
+      "caption": "Rendimento relativo e CUSUM de um veículo fictício: a queda é detectada sem tratar volume como desperdício."
+    },
+    {
+      "src": "decomposicao-lmdi.svg",
+      "caption": "Decomposição LMDI do custo de combustível em atividade, consumo e preço."
+    },
+    {
+      "src": "estimativa-progressiva.svg",
+      "caption": "Estimativa progressiva: a faixa estreita a cada informação enviada."
+    },
+    {
+      "src": "cenarios-economia.svg",
+      "caption": "Economia líquida em três cenários, por nível de evidência."
+    },
+    {
+      "src": "arquitetura-geral.svg",
+      "caption": "Arquitetura proposta: monólito modular em Python (FastAPI) com PostgreSQL."
+    }
+  ],
+  "timeline": [],
+  "contribution": {
+    "lead": "Projeto em grupo de cinco integrantes: Bruna Collavite, Fabio Guntovitch, Fabrizzio Riccelli, Gabriel Tamais e Natasha Zonta.",
+    "items": [
+      [
+        "Minha parte",
+        "Estruturei a entrega e o repositório com apoio do Claude Code: documentação, modelagem de dados, código de referência dos métodos estatísticos e materiais visuais."
+      ]
+    ]
+  },
+  "code": null,
+  "facts": [
+    [
+      "Campos de dados",
+      "181 no dicionário"
+    ],
+    [
+      "Despesas simuladas",
+      "21.656"
+    ],
+    [
+      "User stories",
+      "20 priorizadas (MoSCoW)"
+    ],
+    [
+      "Etapa",
+      "Sprint 1 · planejamento"
+    ]
+  ],
+  "links": [],
+  "thumb": "wf-01-primeira-estimativa.png",
+  "logo": "fiap.jpg"
+}

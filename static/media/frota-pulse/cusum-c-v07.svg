@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500" role="img" aria-labelledby="t d">
+<title id="t">Rendimento relativo e CUSUM de C-V07</title>
+<desc id="d">A razão entre o rendimento de C-V07 e a mediana dos pares cai de cerca de 0,95 para 0,81 a partir de janeiro de 2026; o CUSUM passa do limiar 5 em fevereiro de 2026.</desc>
+<rect width="960" height="500" fill="#fcfcfb"/>
+<text x="24.0" y="32.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#0b0b0b" font-weight="600" text-anchor="start" >C-V07: rendimento em relação aos pares e soma acumulada de desvios (CUSUM)</text>
+<text x="24.0" y="52.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#52514e" font-weight="400" text-anchor="start" >Razão = km/L do veículo ÷ mediana dos pares no mês. Cinza: C-V05, veículo sem desvio. EMP-C, dados sintéticos.</text>
+<line x1="90" y1="233.7" x2="820" y2="233.7" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80.0" y="237.7" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >0,8</text>
+<line x1="90" y1="177.0" x2="820" y2="177.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80.0" y="181.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >0,9</text>
+<line x1="90" y1="120.3" x2="820" y2="120.3" stroke="#c3c2b7" stroke-width="1"/>
+<text x="80.0" y="124.3" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >1,0</text>
+<line x1="455.0" y1="92" x2="455.0" y2="262" stroke="#e1e0d9" stroke-width="1"/>
+<text x="461.0" y="104.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="start" >início da queda</text>
+<polyline points="90.0,148.7 156.4,180.1 222.7,158.4 289.1,156.3 355.5,175.4 421.8,201.0 488.2,153.0 554.5,140.7 620.9,132.9 687.3,148.0 753.6,124.6 820.0,139.6" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="90.0,161.6 156.4,125.7 222.7,159.9 289.1,133.4 355.5,137.8 421.8,126.4 488.2,210.4 554.5,210.1 620.9,169.5 687.3,188.3 753.6,221.3 820.0,230.4" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="820.0" cy="230.4" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="830.0" y="234.4" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="start" >C-V07</text>
+<text x="830.0" y="143.6" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#52514e" font-weight="400" text-anchor="start" >C-V05</text>
+<text x="90.0" y="306.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#52514e" font-weight="600" text-anchor="start" >CUSUM de C-V07 (unidades de desvio-padrão intraveículo)</text>
+<line x1="90" y1="450.0" x2="820" y2="450.0" stroke="#c3c2b7" stroke-width="1"/>
+<text x="80.0" y="454.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >0</text>
+<line x1="90" y1="390.9" x2="820" y2="390.9" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80.0" y="394.9" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >10</text>
+<line x1="90" y1="331.8" x2="820" y2="331.8" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80.0" y="335.8" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >20</text>
+<line x1="90" y1="420.5" x2="820" y2="420.5" stroke="#52514e" stroke-width="1.5"/>
+<text x="830.0" y="424.5" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e" font-weight="400" text-anchor="start" >limiar h = 5</text>
+<polyline points="90.0,445.5 156.4,450.0 222.7,446.1 289.1,450.0 355.5,450.0 421.8,450.0 488.2,427.9 554.5,405.9 620.9,398.5 687.3,384.4 753.6,358.4 820.0,329.1" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="554.5" cy="405.9" r="5" fill="#ec835a" stroke="#fcfcfb" stroke-width="2"/>
+<text x="564.5" y="397.9" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="start" >alarme em fev/26</text>
+<text x="90.0" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >jul/25</text>
+<text x="156.4" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >ago/25</text>
+<text x="222.7" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >set/25</text>
+<text x="289.1" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >out/25</text>
+<text x="355.5" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >nov/25</text>
+<text x="421.8" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >dez/25</text>
+<text x="488.2" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >jan/26</text>
+<text x="554.5" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >fev/26</text>
+<text x="620.9" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >mar/26</text>
+<text x="687.3" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >abr/26</text>
+<text x="753.6" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >mai/26</text>
+<text x="820.0" y="472.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" fill="#6f6e69" font-weight="400" text-anchor="middle" >jun/26</text>
+</svg>

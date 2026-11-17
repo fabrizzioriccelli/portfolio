@@ -1,0 +1,106 @@
+{
+  "slug": "oneapp",
+  "universe": "marketing",
+  "also": [],
+  "order": 12,
+  "title": "One App",
+  "kind": "Profissional",
+  "context": "Santander · Novo app",
+  "year": "fev – dez 2025",
+  "role": "Ideia e desenvolvimento do vídeo how-to",
+  "stack": [
+    "Produção audiovisual",
+    "Vídeo how-to",
+    "Estratégia de marca",
+    "Análise de dados",
+    "Adoção de produto",
+    "Performance"
+  ],
+  "keywords": [
+    "produção audiovisual",
+    "vídeo how-to",
+    "lançamento de app",
+    "adoção de produto",
+    "experiência do cliente",
+    "comunicação de mudança"
+  ],
+  "summary": "O app do Santander passou por uma mudança grande. Propus e desenvolvi um vídeo passo a passo para mostrar ao cliente onde encontrar cada coisa na nova experiência.",
+  "notice": "Peça veiculada publicamente pelo Santander. Marcas pertencem aos seus titulares. Projeto realizado como parte do time de marketing do Santander.",
+  "glance": [
+    {
+      "label": "O contexto",
+      "text": "Uma mudança grande dentro do app, com uma nova organização de telas e funções."
+    },
+    {
+      "label": "A ideia",
+      "text": "Produzir um vídeo how-to que leva o cliente pela nova experiência e mostra onde acessar o que ele já usava."
+    },
+    {
+      "label": "Minha parte",
+      "text": "Propus o formato e desenvolvi essa frente da comunicação, incluindo a estratégia de performance."
+    }
+  ],
+  "videos": [
+    {
+      "src": "oneapp.mp4",
+      "poster": "oneapp.jpg",
+      "title": "Vídeo",
+      "duration": 72,
+      "audio": true,
+      "chapters": [
+        [
+          0,
+          "Vídeo completo"
+        ]
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Comunicar uma mudança",
+      "paragraphs": [
+        "Mudar a interface de um app usado todos os dias gera estranhamento. O vídeo transforma a novidade em um caminho guiado: “tudo em um só lugar”, mostrado na tela do próprio aplicativo."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "telas.jpg",
+      "w": 360,
+      "h": 245,
+      "caption": "Telas do novo app."
+    }
+  ],
+  "diagrams": [],
+  "timeline": [],
+  "contribution": {
+    "lead": "Propus a ideia de um vídeo passo a passo para indicar ao cliente onde acessar cada função e desenvolvi essa frente, como parte do time de marketing do Santander.",
+    "items": [
+      [
+        "Ideia",
+        "O formato how-to para a mudança no app."
+      ],
+      [
+        "Desenvolvimento",
+        "Condução da produção do vídeo."
+      ],
+      [
+        "Performance",
+        "Estratégia de performance da divulgação."
+      ]
+    ]
+  },
+  "code": null,
+  "facts": [
+    [
+      "Formato",
+      "Vídeo how-to"
+    ],
+    [
+      "Duração",
+      "1 min 12 s"
+    ]
+  ],
+  "links": [],
+  "logo": "santander.svg"
+}

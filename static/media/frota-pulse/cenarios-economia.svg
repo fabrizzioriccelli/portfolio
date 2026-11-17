@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" role="img" aria-labelledby="t d">
+<title id="t">Cenários de economia da EMP-C</title>
+<desc id="d">Economia líquida anual estimada: conservador cerca de R$ 21 mil, base cerca de R$ 120 mil e otimista cerca de R$ 257 mil.</desc>
+<rect width="960" height="380" fill="#fcfcfb"/>
+<text x="24.0" y="32.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#0b0b0b" font-weight="600" text-anchor="start" >Economia líquida anual estimada por cenário, EMP-C (fictícia)</text>
+<text x="24.0" y="52.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#52514e" font-weight="400" text-anchor="start" >Escada de evidência; inclui custos de ação e de operar o plano. Hipóteses de simulação, não promessa de economia.</text>
+<line x1="90" y1="296.0" x2="900" y2="296.0" stroke="#c3c2b7" stroke-width="1"/>
+<text x="80.0" y="300.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >0</text>
+<line x1="90" y1="229.3" x2="900" y2="229.3" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80.0" y="233.3" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >R$ 100 mil</text>
+<line x1="90" y1="162.7" x2="900" y2="162.7" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80.0" y="166.7" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >R$ 200 mil</text>
+<line x1="90" y1="96.0" x2="900" y2="96.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80.0" y="100.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="end" >R$ 300 mil</text>
+<path d="M213.0,296.0 V285.6904266416667 Q213.0,281.6904266416667 217.0,281.6904266416667 H233.0 Q237.0,281.6904266416667 237.0,285.6904266416667 V296.0 Z" fill="#86b6ef"/>
+<text x="225.0" y="271.7" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#0b0b0b" font-weight="600" text-anchor="middle" >R$ 21,5 mil</text>
+<text x="225.0" y="318.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="middle" >Conservador</text>
+<text x="225.0" y="334.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e" font-weight="400" text-anchor="middle" >só oportunidades validadas</text>
+<text x="225.0" y="350.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="middle" >payback 1,7 mês</text>
+<path d="M483.0,296.0 V220.2709373059947 Q483.0,216.2709373059947 487.0,216.2709373059947 H503.0 Q507.0,216.2709373059947 507.0,220.2709373059947 V296.0 Z" fill="#3987e5"/>
+<text x="495.0" y="206.3" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#0b0b0b" font-weight="600" text-anchor="middle" >R$ 119,6 mil</text>
+<text x="495.0" y="318.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="middle" >Base</text>
+<text x="495.0" y="334.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e" font-weight="400" text-anchor="middle" >+ anomalias com evidência</text>
+<text x="495.0" y="350.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="middle" >payback 0,8 mês</text>
+<path d="M753.0,296.0 V128.53658022743738 Q753.0,124.53658022743738 757.0,124.53658022743738 H773.0 Q777.0,124.53658022743738 777.0,128.53658022743738 V296.0 Z" fill="#1c5cab"/>
+<text x="765.0" y="114.5" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#0b0b0b" font-weight="600" text-anchor="middle" >R$ 257,2 mil</text>
+<text x="765.0" y="318.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" fill="#0b0b0b" font-weight="600" text-anchor="middle" >Otimista</text>
+<text x="765.0" y="334.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#52514e" font-weight="400" text-anchor="middle" >+ hipóteses a validar</text>
+<text x="765.0" y="350.0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" fill="#6f6e69" font-weight="400" text-anchor="middle" >payback 0,3 mês</text>
+</svg>

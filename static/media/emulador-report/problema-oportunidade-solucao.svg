@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530" width="1200" height="530" role="img" aria-labelledby="t d">
+<title id="t">Do problema à solução</title>
+<desc id="d">Desafios identificados no histórico do projeto, a oportunidade e a solução construída.</desc>
+<defs><marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5D6270"/></marker></defs>
+<rect width="1200" height="530" rx="18" fill="#F7F5F0"/>
+<text x="32" y="44" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#14161B">Do problema à solução</text>
+<rect x="32" y="76" width="360" height="400" rx="14" fill="#FDE9DF" stroke="#F3C2AC" stroke-width="1.5"/>
+<text x="48" y="102" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#B23A0B">DESAFIOS · EVIDÊNCIA NO HISTÓRICO</text>
+<text x="48" y="124" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">O report mensal</text>
+<text x="48" y="146" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Refeito todo mês, com a mesma estrutura</text>
+<text x="48" y="174" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Primeiras versões: HTML editado à mão</text>
+<text x="48" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Regras de marca e limites do Outlook</text>
+<text x="60" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">  para seguir sem apoio técnico</text>
+<text x="48" y="249" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Dois segmentos (PF e PJ), com</text>
+<text x="60" y="268" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">  identidades e seções diferentes</text>
+<text x="48" y="296" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Resumo executivo por e-mail,</text>
+<text x="60" y="315" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">  montado à parte</text>
+<text x="48" y="343" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Ambiente corporativo: nada</text>
+<text x="60" y="362" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">  para instalar</text>
+<path d="M392,266 L448,266" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="448" y="136" width="300" height="260" rx="14" fill="#FFF4D6" stroke="#EBD08A" stroke-width="1.5"/>
+<text x="464" y="162" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#8A5200">OPORTUNIDADE</text>
+<text x="464" y="184" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Separar conteúdo, forma e canal</text>
+<text x="464" y="206" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">O time cuida do conteúdo do mês.</text>
+<text x="464" y="230" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">A ferramenta cuida da marca,</text>
+<text x="464" y="254" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">do layout, do celular e do e-mail.</text>
+<text x="464" y="278" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270"></text>
+<text x="464" y="302" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Sem servidor, sem instalação:</text>
+<text x="464" y="326" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">um arquivo que abre no navegador.</text>
+<path d="M748,266 L804,266" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="804" y="76" width="364" height="400" rx="14" fill="#E8EEFF" stroke="#C9D6FF" stroke-width="1.5"/>
+<text x="820" y="102" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#2D5BFF">SOLUÇÃO</text>
+<text x="820" y="124" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Emuladores PF e PJ</text>
+<text x="820" y="146" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Edição na própria página do report</text>
+<text x="820" y="174" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Um motor, dois perfis (PF e PJ)</text>
+<text x="820" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Report .html com tudo embutido</text>
+<text x="820" y="230" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• E-mail-resumo .eml pronto</text>
+<text x="832" y="249" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">  para o Outlook</text>
+<text x="820" y="277" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Prévia no computador e no celular</text>
+<text x="820" y="305" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Status de conferência em tempo real</text>
+<text x="820" y="333" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">• Nenhum número é inventado</text>
+<text x="832" y="352" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">  ou calculado pela ferramenta</text>
+<text x="32" y="510" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="12" fill="#5D6270">Fontes: CHANGELOG.md (versões 1.x a 5.6) e docs/ do repositório.</text>
+</svg>

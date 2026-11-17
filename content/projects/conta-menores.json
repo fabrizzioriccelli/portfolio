@@ -1,0 +1,97 @@
+{
+  "slug": "conta-menores",
+  "universe": "marketing",
+  "also": [],
+  "order": 10,
+  "title": "Conta para Menores",
+  "kind": "Profissional",
+  "context": "Santander · Campanha de aquisição",
+  "year": "nov – dez 2025",
+  "role": "Campanha end-to-end, full funnel",
+  "stack": [
+    "Campanha full funnel",
+    "Estratégia de marca",
+    "Análise de dados",
+    "Aquisição",
+    "Performance"
+  ],
+  "keywords": [
+    "campanha full funnel",
+    "end-to-end",
+    "planejamento de campanha",
+    "marketing de aquisição",
+    "marketing de performance",
+    "jornada do cliente",
+    "banco"
+  ],
+  "summary": "“O primeiro passo financeiro de crianças e adolescentes começa agora”: uma jornada de autonomia, liberdade e educação financeira. Desenvolvi todo o processo da campanha, de ponta a ponta e em todas as etapas do funil.",
+  "notice": "Peça veiculada publicamente pelo Santander. Marcas pertencem aos seus titulares. Projeto realizado como parte do time de marketing do Santander.",
+  "cover": {
+    "src": "key-visual.webp",
+    "w": 1440,
+    "h": 960
+  },
+  "glance": [
+    {
+      "label": "O produto",
+      "text": "Uma conta do Santander para crianças e adolescentes, apresentada como o primeiro passo financeiro: uma jornada de autonomia, liberdade e educação financeira."
+    },
+    {
+      "label": "O desafio",
+      "text": "Falar com quem decide (pais e responsáveis) sobre um produto pensado para os filhos, do primeiro contato com a campanha até a abertura da conta."
+    },
+    {
+      "label": "Minha parte",
+      "text": "Todo o processo da campanha, de ponta a ponta e em todas as etapas do funil, incluindo a estratégia de performance."
+    }
+  ],
+  "videos": [],
+  "sections": [
+    {
+      "title": "Do planejamento ao resultado",
+      "paragraphs": [
+        "A campanha foi conduzida de ponta a ponta: estratégia, planejamento, desenvolvimento da comunicação, execução e acompanhamento dos resultados. O key visual traduz o produto em uma cena de família, com a criança no centro."
+      ]
+    },
+    {
+      "title": "O funil",
+      "list": [
+        "Descoberta (awareness): apresentar a conta para pais e responsáveis.",
+        "Consideração: mostrar os benefícios para a família.",
+        "Conversão: levar à abertura da conta.",
+        "Performance: planejamento e otimização das campanhas ao longo do período."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "praia.jpg",
+      "w": 363,
+      "h": 240,
+      "caption": "Peça da campanha."
+    }
+  ],
+  "diagrams": [],
+  "timeline": [],
+  "contribution": {
+    "lead": "Desenvolvi todo o processo da campanha, end-to-end e full funnel, como parte do time de marketing do Santander.",
+    "items": [
+      [
+        "Estratégia e planejamento",
+        "Definição da campanha e do plano para cada etapa do funil."
+      ],
+      [
+        "Execução",
+        "Condução da campanha até a veiculação."
+      ],
+      [
+        "Performance",
+        "Estratégia de performance e acompanhamento de resultados."
+      ]
+    ]
+  },
+  "code": null,
+  "facts": [],
+  "links": [],
+  "logo": "santander.svg"
+}

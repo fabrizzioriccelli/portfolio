@@ -1,0 +1,288 @@
+{
+  "name": "Fabrizzio Riccelli",
+  "first": "Fabrizzio",
+  "last": "Riccelli",
+  "lang": "pt-BR",
+  "base_url": null,
+  "city": "São Paulo",
+  "tagline": "Dados, inteligência artificial e comunicação.",
+  "intro": "Projetos de tecnologia, marketing e design.",
+  "description": "Portfólio de Fabrizzio Riccelli: designer de formação, com mais de 4 anos em marketing digital, brand, mídia, performance e dados. Tecnólogo em IA (FIAP).",
+  "links": {
+    "github": "https://github.com/fabrizzioriccelli",
+    "linkedin": "https://www.linkedin.com/in/fabrizzioriccelli/",
+    "behance": "https://www.behance.net/fabrizzioriccelli",
+    "cv": null
+  },
+  "universes": [
+    {
+      "id": "tecnologia",
+      "numeral": "I",
+      "title": "Tecnologia & IA",
+      "short": "Tecnologia",
+      "lede": "Ferramentas, automações e projetos acadêmicos de dados e inteligência artificial.",
+      "pending": null,
+      "upcoming": [
+        {
+          "title": "FarmTech Solutions",
+          "kind": "Acadêmico · FIAP",
+          "note": "Projeto em grupo de gestão agrícola em Python e R, com protótipo publicado. O case entra quando a participação estiver descrita."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "numeral": "II",
+      "title": "Marketing & Comunicação",
+      "short": "Marketing",
+      "lede": "Campanhas full funnel, estratégia de comunicação, performance, produção audiovisual e ASO para o Santander.",
+      "pending": null
+    },
+    {
+      "id": "design",
+      "numeral": "III",
+      "title": "Branding & Design",
+      "short": "Design",
+      "lede": "Identidade visual, direção de arte e interfaces.",
+      "pending": {
+        "title": "Novos projetos em produção.",
+        "text": "Três cases conceituais vão entrar aqui, sempre identificados como conceituais.",
+        "items": [
+          "Identidade visual (conceitual)",
+          "Produto digital A (conceitual, UX/UI)",
+          "Produto digital B (conceitual, UX/UI)"
+        ]
+      }
+    },
+    {
+      "id": "sobre",
+      "numeral": "IV",
+      "title": "Sobre & Contato",
+      "short": "Sobre",
+      "lede": "Trajetória, formação e contato.",
+      "pending": null
+    }
+  ],
+  "about": {
+    "headline": "Design, marketing e inteligência artificial",
+    "paragraphs": [
+      "Comecei pela direção de arte e pelo design gráfico. No Santander, migrei para uma atuação mais estratégica e analítica, sem perder o olhar de marca: fiz a ponte entre Growth e Branding, cuidei de campanhas institucionais e sazonais e trabalhei com mídia, performance, CRM e ASO.",
+      "Agora estou aberto a novas oportunidades, unindo o repertório de marketing e design à formação em inteligência artificial."
+    ],
+    "experience": [
+      {
+        "org": "Santander Brasil",
+        "period": "mai 2023 – nov 2026",
+        "roles": [
+          {
+            "title": "Analista de Marketing · Digital Growth & Performance",
+            "period": "jun 2024 – nov 2026",
+            "items": [
+              "Ponte entre os times de Growth e Branding, alinhando estratégia de crescimento e diretrizes de marca.",
+              "Desenvolvimento e acompanhamento de peças para campanhas institucionais e sazonais, com aderência à identidade visual.",
+              "Coparticipação no planejamento estratégico com as squads de Growth, no desenvolvimento e na execução de campanhas.",
+              "Envolvimento direto em lançamentos e ações sazonais, conectando branding, conteúdo e performance."
+            ]
+          },
+          {
+            "title": "Estágio em Marketing · Negócios Digitais",
+            "period": "fev 2024 – jun 2024",
+            "items": [
+              "Time de Inbound Marketing, com foco em crescimento de produto orientado por dados e performance.",
+              "Liderança de estratégias de marketing 360°, com foco em KPIs, métricas e análise de performance entre canais.",
+              "Ponte entre squads e agências criativas para desenvolver e otimizar peças de comunicação."
+            ]
+          },
+          {
+            "title": "Estágio em Marketing · Squad Ágil de Investimentos",
+            "period": "nov 2023 – fev 2024",
+            "items": [
+              "Representação do marketing na squad de Investimentos, em modelo de tribos e squads, com rotinas Scrum.",
+              "Análise de indicadores (IPs e KPIs) para apoiar decisões e ajustes estratégicos."
+            ]
+          },
+          {
+            "title": "Estágio em Marketing · Cluster Marketing",
+            "period": "mai 2023 – nov 2023",
+            "items": [
+              "Customer Lifecycle Marketing, com foco em monetização e relacionamento com clientes.",
+              "Liderança de projetos de comunicação para produtos bancários: Assistências (HELPS), Capitalização e Investimentos.",
+              "Briefings alinhados a metas de performance e engajamento, e ponte entre agências e times internos (CRM, Produtos e Segmentos) em campanhas 360°."
+            ]
+          }
+        ],
+        "logo": "santander.svg",
+        "mono": "SB"
+      },
+      {
+        "org": "ALS",
+        "period": "mar 2023 – out 2023",
+        "roles": [
+          {
+            "title": "Direção de Arte · Freelance",
+            "period": "mar 2023 – out 2023",
+            "items": [
+              "Sistemas visuais de apresentação e estruturas de slides para grandes marcas, em trabalho remoto.",
+              "Projetos para Grupo Boticário, La Roche-Posay, Kenvue, Johnson & Johnson e Aché, alinhados diretamente com o cliente."
+            ]
+          }
+        ],
+        "mono": "ALS",
+        "logo": "als.png"
+      },
+      {
+        "org": "Hanok Branding",
+        "period": "out 2022 – fev 2023",
+        "roles": [
+          {
+            "title": "Direção de Arte",
+            "period": "out 2022 – fev 2023",
+            "items": [
+              "Briefings estratégicos e reuniões de alinhamento com clientes.",
+              "Identidades visuais e peças para redes sociais e branding.",
+              "Planejamento de soluções de marketing, design e UX para públicos B2C, com relatórios de performance."
+            ]
+          }
+        ],
+        "mono": "HB",
+        "logo": "hanok.png"
+      }
+    ],
+    "skills": [
+      {
+        "group": "Marketing e mídia",
+        "items": [
+          "Marketing digital",
+          "Mídia e performance",
+          "Campanhas full funnel e 360°",
+          "CRM e Customer Lifecycle",
+          "ASO",
+          "Google Analytics"
+        ]
+      },
+      {
+        "group": "Brand e criação",
+        "items": [
+          "Branding",
+          "Estratégia criativa",
+          "Direção de arte",
+          "Produção audiovisual",
+          "UX/UI"
+        ]
+      },
+      {
+        "group": "Dados, produto e IA",
+        "items": [
+          "Análise de dados e KPIs",
+          "Negócios e product management",
+          "Python",
+          "Machine learning (em formação)",
+          "IA generativa e NLP (em formação)"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Tecnólogo em Inteligência Artificial",
+        "place": "FIAP",
+        "status": "ago 2026 – jan 2028 · em curso",
+        "logo": "fiap.jpg"
+      },
+      {
+        "title": "Bacharelado em Design Gráfico",
+        "place": "Universidade Anhembi Morumbi",
+        "status": "2022 – 2025",
+        "logo": "anhembi.png"
+      }
+    ],
+    "certifications": [
+      "Google Analytics Individual Qualification",
+      "Agile Project Management",
+      "Fundamentals of Digital Marketing",
+      "UX Design Professional Certificate"
+    ],
+    "languages": [
+      [
+        "Português",
+        "Nativo"
+      ],
+      [
+        "Inglês",
+        "Fluente (profissional)"
+      ],
+      [
+        "Espanhol",
+        "Básico"
+      ]
+    ],
+    "photo": {
+      "src": "portrait.jpg",
+      "w": 1000,
+      "h": 1250,
+      "alt": "Retrato de Fabrizzio Riccelli"
+    },
+    "lead": "Designer de formação, com mais de 4 anos de experiência em marketing digital, brand, estratégia criativa, mídia e performance, análise de dados, negócios e product management.",
+    "summary": [
+      [
+        "Mercado",
+        "Mais de 4 anos de experiência. Destes, 3 anos e 7 meses no Santander (mai 2023 – nov 2026), entre Growth, Branding e Performance."
+      ],
+      [
+        "Mídia e performance",
+        "Planejamento de campanhas 360° e full funnel, análise de resultados entre canais e otimização a partir de KPIs."
+      ],
+      [
+        "Dados",
+        "Leitura de métricas e indicadores para orientar decisões de negócio e de comunicação. Certificado em Google Analytics."
+      ],
+      [
+        "Brand e criação",
+        "Estratégia criativa, direção de arte e identidade visual, com projetos para marcas como Grupo Boticário, La Roche-Posay, Kenvue, Johnson & Johnson e Aché."
+      ],
+      [
+        "Produto e UX",
+        "Produtos digitais, experiência do cliente e UX/UI. Certificado UX Design Professional Certificate."
+      ],
+      [
+        "Inteligência artificial",
+        "Tecnólogo em Inteligência Artificial na FIAP (em curso): Python, machine learning, deep learning, IA generativa e NLP. Já uso IA para construir ferramentas de marketing."
+      ]
+    ]
+  },
+  "impact": "Do insight ao resultado.",
+  "impact_sub": "Designer de formação, com mais de 4 anos em marketing digital. Uno estratégia de marca, mídia e performance, análise de dados e inteligência artificial para transformar comportamento em resultado.",
+  "credentials": [
+    "Mais de 4 anos de mercado, sendo 3 anos e 7 meses no Santander (2023–2026)",
+    "Brand, mídia e performance, dados e produto digital",
+    "Tecnólogo em Inteligência Artificial na FIAP (em curso)"
+  ],
+  "email": "fareccelli@gmail.com",
+  "highlights": [
+    {
+      "slug": "conta-menores",
+      "image": "key-visual.webp",
+      "line": "O primeiro passo financeiro de crianças e adolescentes, numa campanha end-to-end."
+    },
+    {
+      "slug": "santander-rewards",
+      "video": "rewards.mp4",
+      "poster": "rewards.jpg",
+      "line": "Um vídeo passo a passo para o cliente encontrar o programa de recompensas no app."
+    },
+    {
+      "slug": "oneapp",
+      "video": "oneapp.mp4",
+      "poster": "oneapp.jpg",
+      "line": "Tudo em um só lugar: um how-to para guiar o cliente pela nova experiência do app."
+    },
+    {
+      "slug": "alpha",
+      "image": "alpha-04.jpg",
+      "line": "Identidade visual para engenharia civil, da papelaria ao canteiro de obras."
+    }
+  ],
+  "email_template": {
+    "subject": "Contato pelo portfólio",
+    "body": "Olá, Fabrizzio! Tudo bem?\n\nVi o seu portfólio e me interessei pelo seu trabalho. Gostaria de conversar com você sobre uma oportunidade.\n\nMeu nome:\nEmpresa:\nMelhor forma de contato:\n\nAbraço!"
+  }
+}

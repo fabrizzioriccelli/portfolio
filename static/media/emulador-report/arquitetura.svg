@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 610" width="1200" height="610" role="img" aria-labelledby="t d">
+<title id="t">Arquitetura técnica</title>
+<desc id="d">Componentes reais: tudo roda no navegador, sem servidor; o Node.js só monta e testa.</desc>
+<defs><marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5D6270"/></marker></defs>
+<rect width="1200" height="610" rx="18" fill="#F7F5F0"/>
+<text x="32" y="44" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#14161B">Arquitetura técnica</text>
+<rect x="32" y="74" width="760" height="380" rx="14" fill="#FBFAF7" stroke="#DCD7CD" stroke-width="1.5"/>
+<text x="48" y="100" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#5D6270">NAVEGADOR (CHROME OU EDGE) · ARQUIVO LOCAL · SEM SERVIDOR</text>
+<rect x="56" y="120" width="340" height="150" rx="14" fill="#E8EEFF" stroke="#C9D6FF" stroke-width="1.5"/>
+<text x="72" y="146" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#2D5BFF">INTERFACE</text>
+<text x="72" y="168" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Emulador (um .html avulso)</text>
+<text x="72" y="190" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Abrir · editar · organizar · salvar</text>
+<text x="72" y="210" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Seções, prévia, Desfazer/Refazer</text>
+<text x="72" y="230" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">E-mail-resumo e status</text>
+<rect x="420" y="120" width="348" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<text x="436" y="146" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#5D6270">IFRAME</text>
+<text x="436" y="168" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Página do report</text>
+<text x="436" y="190" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">O próprio report, editável</text>
+<text x="436" y="210" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">data-campo / data-item / data-img</text>
+<text x="436" y="230" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Grade única: computador e celular</text>
+<path d="M396,195 L420,195" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="56" y="290" width="340" height="140" rx="14" fill="#14161B" stroke="#14161B" stroke-width="1.5"/>
+<text x="72" y="316" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#9AA3B2">EMBUTIDO</text>
+<text x="72" y="338" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff">Motor (tools/motor.js)</text>
+<text x="72" y="360" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#D5D9E0">Blocos de dados · template · marca</text>
+<text x="72" y="380" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#D5D9E0">Conferência · e-mail (.eml) · modo escuro</text>
+<text x="72" y="400" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#D5D9E0">Perfis PF e PJ</text>
+<rect x="420" y="290" width="168" height="140" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<text x="436" y="316" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#5D6270">EMBUTIDO</text>
+<text x="436" y="338" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Modelos</text>
+<text x="436" y="360" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">em branco</text>
+<text x="436" y="380" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">PF e PJ</text>
+<text x="436" y="400" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#5D6270">tools/coringa*.js</text>
+<rect x="600" y="290" width="168" height="140" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<text x="616" y="316" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#5D6270">NAVEGADOR</text>
+<text x="616" y="338" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">IndexedDB</text>
+<text x="616" y="360" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Recuperar</text>
+<text x="616" y="380" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">a edição</text>
+<text x="616" y="400" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">até salvar</text>
+<rect x="832" y="74" width="336" height="220" rx="14" fill="#E3F2EF" stroke="#9FD5CC" stroke-width="1.5"/>
+<text x="848" y="100" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#0F8A7E">SAÍDAS (DOWNLOAD)</text>
+<text x="848" y="122" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Arquivos gerados</text>
+<text x="848" y="144" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">report-AAAA-MM.html</text>
+<text x="860" y="158" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">  imagens e vídeos em base64</text>
+<text x="848" y="178" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">report-AAAA-MM-resumo.eml</text>
+<text x="848" y="198" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">e-mail completo .eml (opcional)</text>
+<text x="848" y="218" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">imagem do resumo .png</text>
+<path d="M792,184 L832,184" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="832" y="318" width="336" height="136" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="848" y="344" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#5D6270">ENTRADAS</text>
+<text x="848" y="366" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Arquivos da pessoa</text>
+<text x="848" y="388" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Report salvo (.html)</text>
+<text x="848" y="408" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Imagens, vídeos (Explorador)</text>
+<text x="848" y="428" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Blocos de texto (Importar conteúdo)</text>
+<path d="M832,386 L792,386" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="32" y="478" width="1136" height="100" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<text x="48" y="504" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2" fill="#5D6270">MANUTENÇÃO (NODE.JS) · NÃO VAI PARA O TIME</text>
+<text x="48" y="526" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#14161B">Montagem e testes</text>
+<text x="48" y="548" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">tools/montar-avulso.js → kit/emulador-report*.html · tools/atualizar-coringa.js (gerar-report.html num Chromium) · tests/ (Playwright e Node)</text>
+<text x="48" y="568" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">tools/portfolio/ → build de demonstração, peças fictícias, capturas, vídeos e diagramas deste case</text>
+</svg>

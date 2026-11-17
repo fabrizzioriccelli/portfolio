@@ -1,0 +1,345 @@
+{
+  "slug": "emulador-report",
+  "universe": "tecnologia",
+  "also": [
+    "marketing"
+  ],
+  "order": 1,
+  "title": "Emulador Report",
+  "kind": "Profissional",
+  "context": "Marketing · Santander PF e PJ",
+  "year": "2026",
+  "role": "Dono do produto, de ponta a ponta",
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "IndexedDB",
+    "Playwright",
+    "Node.js"
+  ],
+  "summary": "O report mensal de performance de marketing editado na própria página e transformado em um e-mail executivo pronto para o Outlook. Sem código e sem instalar nada.",
+  "notice": "Demonstração com dados fictícios. Nenhum dado exibido representa resultados reais, clientes ou campanhas internas do Santander. Case de portfólio independente, sem vínculo institucional.",
+  "glance": [
+    {
+      "label": "Problema",
+      "text": "Um report mensal com a mesma estrutura, refeito todo mês sob regras de marca, limites do Outlook e dois segmentos com identidades diferentes. As primeiras versões eram HTML editado à mão."
+    },
+    {
+      "label": "Resposta",
+      "text": "Um arquivo que abre no navegador e transforma a página do report no próprio editor: clicar, escrever, organizar, trocar imagens e vídeos, salvar um .html único e gerar o e-mail-resumo .eml."
+    },
+    {
+      "label": "Diferencial",
+      "text": "Separar conteúdo (o time), forma (a marca e o layout) e canal (página e e-mail). Um motor, dois perfis e nenhum número inventado pela ferramenta."
+    }
+  ],
+  "videos": [
+    {
+      "src": "overview.mp4",
+      "poster": "overview.jpg",
+      "title": "Visão geral",
+      "duration": 45,
+      "chapters": [
+        [
+          0.5,
+          "Um arquivo que abre no navegador, sem instalar nada"
+        ],
+        [
+          3.1,
+          "Abre o report do mês anterior"
+        ],
+        [
+          7.8,
+          "A página do mês vira o editor"
+        ],
+        [
+          16.1,
+          "Prévia no celular antes de salvar"
+        ],
+        [
+          25.2,
+          "Emulador PJ: o mesmo sistema, outra identidade"
+        ],
+        [
+          30.8,
+          "Resultados como funil"
+        ],
+        [
+          36.4,
+          "E-mail-resumo e prévia do Outlook"
+        ]
+      ]
+    },
+    {
+      "src": "workflow-report.mp4",
+      "poster": "workflow-report.jpg",
+      "title": "Montando o mês",
+      "duration": 78,
+      "chapters": [
+        [
+          0.5,
+          "Modelo em branco com todas as seções"
+        ],
+        [
+          5.3,
+          "Clique e escreva"
+        ],
+        [
+          20.6,
+          "Indicadores"
+        ],
+        [
+          40.1,
+          "+ Novo item"
+        ],
+        [
+          48.4,
+          "Arrastar com encaixe"
+        ],
+        [
+          55.5,
+          "Mover para outra seção"
+        ],
+        [
+          65.0,
+          "Vídeo no card"
+        ]
+      ]
+    },
+    {
+      "src": "emuladores-pf-pj.mp4",
+      "poster": "emuladores-pf-pj.jpg",
+      "title": "PF e PJ",
+      "duration": 26,
+      "chapters": [
+        [
+          0.5,
+          "Emulador PF"
+        ],
+        [
+          6.0,
+          "Seções, ordem e visibilidade"
+        ],
+        [
+          11.9,
+          "Emulador PJ"
+        ],
+        [
+          17.3,
+          "O mesmo motor, seções próprias"
+        ],
+        [
+          22.9,
+          "PF e PJ não se misturam"
+        ]
+      ]
+    },
+    {
+      "src": "email-summary.mp4",
+      "poster": "email-summary.jpg",
+      "title": "E-mail-resumo",
+      "duration": 34,
+      "chapters": [
+        [
+          0.5,
+          "Report pronto: agora o e-mail"
+        ],
+        [
+          12.0,
+          "Até 4 destaques do próprio report"
+        ],
+        [
+          20.2,
+          "Prévia no computador e no celular"
+        ],
+        [
+          26.9,
+          "Baixar o .eml para o Outlook"
+        ]
+      ]
+    }
+  ],
+  "demo": {
+    "src": "emulador-pf.html",
+    "label": "Emulador Report PF · demonstração com dados fictícios"
+  },
+  "sections": [
+    {
+      "title": "Contexto",
+      "paragraphs": [
+        "O projeto nasceu numa experiência profissional em marketing ligada às frentes PF (pessoa física) e PJ (empresas) do Santander. A necessidade era a de muitos times de marketing: contar todo mês o que foi feito e o que funcionou, num formato consistente e fácil de atualizar para quem decide.",
+        "O report tinha dois destinos: uma página completa, com movimento, vídeos e peças, e um e-mail lido no Outlook. Quem atualizava não era desenvolvedor, e o ambiente era corporativo, sem permissão para instalar programas."
+      ]
+    },
+    {
+      "title": "O que a ferramenta faz",
+      "list": [
+        "Cria e atualiza o report do mês a partir do modelo em branco ou do mês anterior.",
+        "Edita textos, números, etiquetas de resultado, campanhas e aprendizados direto na página.",
+        "Organiza itens e seções: novo item, arrastar com encaixe, mover entre seções, ordem e visibilidade.",
+        "Troca imagens, com recorte e redução no próprio navegador, e insere vídeos e links.",
+        "Mostra a prévia no computador e no celular antes de salvar.",
+        "Gera um report .html único, com imagens e vídeos embutidos.",
+        "Produz o e-mail-resumo com até 4 destaques e exporta em .eml para o Outlook.",
+        "Atende PF e PJ com o mesmo motor, mudando marca, seções e layout."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "01-emulador-pf.jpg",
+      "w": 1600,
+      "h": 1000,
+      "caption": "Emulador PF: a página do report vira o editor."
+    },
+    {
+      "src": "02-emulador-pj.jpg",
+      "w": 1600,
+      "h": 1000,
+      "caption": "Emulador PJ: mesmo motor, identidade do segmento."
+    },
+    {
+      "src": "03-edicao-texto.jpg",
+      "w": 1600,
+      "h": 1000,
+      "caption": "Edição na própria página."
+    },
+    {
+      "src": "04-indicadores.jpg",
+      "w": 1600,
+      "h": 1000,
+      "caption": "Indicadores com etiqueta de variação."
+    },
+    {
+      "src": "06-organizar.jpg",
+      "w": 1600,
+      "h": 1000,
+      "caption": "Organização de seções."
+    },
+    {
+      "src": "12-funil-pj.jpg",
+      "w": 1600,
+      "h": 1000,
+      "caption": "Principais resultados como funil (PJ)."
+    },
+    {
+      "src": "10-email-resumo.jpg",
+      "w": 1600,
+      "h": 1000,
+      "caption": "E-mail-resumo com destaques escolhidos."
+    },
+    {
+      "src": "13-celular.jpg",
+      "w": 739,
+      "h": 1600,
+      "caption": "Report no celular."
+    }
+  ],
+  "diagrams": [
+    {
+      "src": "problema-oportunidade-solucao.svg",
+      "w": 1200,
+      "h": 610,
+      "caption": "Desafios, a oportunidade de separar conteúdo, forma e canal, e os dois emuladores."
+    },
+    {
+      "src": "fluxo-de-uso.svg",
+      "w": 1200,
+      "h": 610,
+      "caption": "Fluxo de uso em sete passos: abrir, editar, organizar, mídia, conferir, salvar e e-mail."
+    },
+    {
+      "src": "arquitetura.svg",
+      "w": 1200,
+      "h": 610,
+      "caption": "Arquitetura: tudo roda no navegador, sem servidor. O Node.js só monta e testa."
+    }
+  ],
+  "timeline": [
+    [
+      "Out/2026 · 1.x–2.x",
+      "Report em HTML com vídeo e e-mail HTML editado à mão."
+    ],
+    [
+      "Out/2026 · 3.x",
+      "Modelo reutilizável: dados do mês em texto e motor de geração."
+    ],
+    [
+      "Out/2026 · 4.0–4.2",
+      "E-mail-resumo, versão interativa e campos editáveis."
+    ],
+    [
+      "Out/2026 · 4.3",
+      "O emulador vira o centro da operação: edição na própria página."
+    ],
+    [
+      "Out–Nov/2026 · 4.4–4.13",
+      "Mídia em qualquer item, celular, desempenho, modo escuro, destaques escolhidos."
+    ],
+    [
+      "Nov/2026 · 5.0–5.4",
+      "Emulador PJ, esqueleto único de página e funil."
+    ],
+    [
+      "Nov/2026 · 5.5–5.6",
+      "Arrastar com encaixe, Refazer, + Novo item, mover entre seções."
+    ]
+  ],
+  "timeline_note": "42 entradas de versão no CHANGELOG em cerca de seis semanas (02/10 a 11/11/2026).",
+  "contribution": {
+    "lead": "Conduzi o projeto de ponta a ponta, como dono do produto: identifiquei a oportunidade no processo do report mensal, defini o que a ferramenta precisava fazer e para quem, e evoluí a solução versão a versão a partir do uso real.",
+    "items": [
+      [
+        "Problema e requisitos",
+        "Traduzi a rotina do report (conteúdo, marca, Outlook, celular, dois segmentos) em regras como “a ferramenta não inventa número” e “indicador sem dado fica oculto”."
+      ],
+      [
+        "Experiência de uso",
+        "Desenhei o fluxo de edição na própria página para pessoas sem conhecimento técnico e simplifiquei a interface a cada rodada de uso."
+      ],
+      [
+        "Produto PF e PJ",
+        "Levei o sistema de um segmento para dois, com o mesmo motor e identidades próprias."
+      ],
+      [
+        "Desenvolvimento com IA",
+        "Construí a solução com apoio do Claude Code: eu definia o problema, os critérios de aceite e as prioridades, revisava cada entrega e validava no uso real. O histórico registra 41 pull requests revisados e integrados por mim."
+      ],
+      [
+        "Qualidade e documentação",
+        "Testes automatizados de ponta a ponta, guia operacional e material de treinamento para o time."
+      ]
+    ]
+  },
+  "code": {
+    "file": "tools/motor.js",
+    "caption": "A regra “nenhum número inventado” no motor: conteúdo de exemplo do modelo conta como pendência, e a versão final só sai com dados reais.",
+    "lang": "javascript",
+    "snippet": "function ehPendencia(s) { return /\\[[^\\]]*\\]/.test(s); }\n\n/* Conteúdo PROVISÓRIO do modelo: Lorem Ipsum nos textos e \"X\" nos\n   números. Conta como pendência: a versão final só sai com dados reais. */\nfunction provisorio(s, campo) {\n  s = String(s || \"\");\n  if (/\\blorem\\b|\\bipsum\\b/i.test(s)) return \"texto de exemplo (Lorem Ipsum)\";\n  if (CAMPOS_NUMERICOS.indexOf(campo) >= 0 && xDeExemplo(s)) return \"valor de exemplo (X)\";\n  if (/AAAA|\\bMM\\b/.test(s) && campo === \"pasta_imagens\") return \"pasta do mês (AAAA-MM)\";\n  return \"\";\n}"
+  },
+  "facts": [
+    [
+      "Testes",
+      "18 suítes (Playwright e Node)"
+    ],
+    [
+      "Versões",
+      "42 no CHANGELOG"
+    ],
+    [
+      "Pull requests",
+      "41 revisados"
+    ],
+    [
+      "Instalação",
+      "Nenhuma"
+    ]
+  ],
+  "links": [
+    [
+      "Repositório no GitHub",
+      "https://github.com/fabrizzioriccelli/emulador-report"
+    ]
+  ]
+}

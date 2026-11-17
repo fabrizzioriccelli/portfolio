@@ -1,0 +1,99 @@
+{
+  "slug": "santander-rewards",
+  "universe": "marketing",
+  "also": [],
+  "order": 9,
+  "title": "Santander Rewards",
+  "kind": "Profissional",
+  "context": "Santander · Programa de recompensas",
+  "year": "fev – jun 2026",
+  "role": "Ideia e desenvolvimento do vídeo how-to",
+  "stack": [
+    "Produção audiovisual",
+    "Briefing de agência",
+    "CRM",
+    "Mídia",
+    "Performance"
+  ],
+  "keywords": [
+    "produção audiovisual",
+    "vídeo how-to",
+    "briefing de agência",
+    "CRM",
+    "mídia",
+    "programa de recompensas",
+    "adoção de produto"
+  ],
+  "summary": "Vídeo passo a passo para mostrar ao cliente onde encontrar e como usar o programa de recompensas no app. A ideia do vídeo foi minha.",
+  "notice": "Peça veiculada publicamente pelo Santander. Marcas pertencem aos seus titulares. Projeto realizado como parte do time de marketing do Santander.",
+  "glance": [
+    {
+      "label": "O contexto",
+      "text": "Uma mudança relevante na experiência do programa de recompensas, que o cliente precisava encontrar e entender dentro do app."
+    },
+    {
+      "label": "A ideia",
+      "text": "Em vez de só anunciar a novidade, produzir um vídeo how-to que mostra ao cliente, passo a passo, onde acessar e como usar."
+    },
+    {
+      "label": "Minha parte",
+      "text": "Propus e desenvolvi a frente do vídeo. O projeto envolveu estratégia, briefing de agência, produção, CRM, mídia e estratégia de performance."
+    }
+  ],
+  "videos": [
+    {
+      "src": "rewards.mp4",
+      "poster": "rewards.jpg",
+      "title": "Vídeo",
+      "duration": 37,
+      "audio": true,
+      "chapters": [
+        [
+          0,
+          "Vídeo completo"
+        ]
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Por que um how-to",
+      "paragraphs": [
+        "Quando a mudança acontece dentro do app, a dúvida do cliente é prática: onde fica e o que eu faço agora. Um vídeo curto, com o caminho na tela, responde isso mais rápido do que um texto."
+      ]
+    }
+  ],
+  "gallery": [],
+  "diagrams": [],
+  "timeline": [],
+  "contribution": {
+    "lead": "Propus a ideia de produzir um vídeo passo a passo e desenvolvi essa frente, como parte do time de marketing do Santander.",
+    "items": [
+      [
+        "Ideia",
+        "O formato how-to para indicar ao cliente onde acessar o programa."
+      ],
+      [
+        "Produção",
+        "Briefing de agência e acompanhamento da produção do vídeo."
+      ],
+      [
+        "Distribuição",
+        "Estratégia de CRM, mídia e performance."
+      ]
+    ]
+  },
+  "code": null,
+  "facts": [
+    [
+      "Formato",
+      "Vídeo how-to"
+    ],
+    [
+      "Duração",
+      "37 s"
+    ]
+  ],
+  "links": [],
+  "logo": "santander.svg"
+}

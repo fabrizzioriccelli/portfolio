@@ -1,0 +1,87 @@
+{
+  "slug": "select-global",
+  "universe": "marketing",
+  "also": [],
+  "order": 16,
+  "title": "Select Global",
+  "kind": "Profissional",
+  "context": "Santander Select · Conta internacional",
+  "year": "dez 2023 – fev 2024",
+  "role": "Estratégia, key visual e masters do lançamento",
+  "stack": [
+    "Lançamento de produto",
+    "Estratégia de campanha",
+    "Key visual",
+    "Direção de arte",
+    "Alta renda"
+  ],
+  "keywords": [
+    "lançamento de produto",
+    "estratégia de campanha",
+    "key visual",
+    "direção de arte",
+    "Santander Select",
+    "alta renda",
+    "conta internacional"
+  ],
+  "summary": "Lançamento da Select Global, a conta internacional do Santander Brasil para clientes que lidam com moeda estrangeira. Acompanhei a campanha da estratégia ao key visual e às masters das comunicações.",
+  "notice": "Projeto do time de marketing do Santander. Esta página descreve apenas a minha participação. Marcas pertencem aos seus titulares.",
+  "glance": [
+    {
+      "label": "O produto",
+      "text": "A Select Global é uma conta internacional oferecida pelo Santander Brasil para clientes que lidam com moeda estrangeira."
+    },
+    {
+      "label": "O desafio",
+      "text": "Lançar um produto para o público de alta renda do Santander Select com uma comunicação consistente em todas as peças."
+    },
+    {
+      "label": "Minha parte",
+      "text": "Acompanhamento da campanha: estratégia, desenvolvimento do key visual e das masters das comunicações de lançamento."
+    }
+  ],
+  "videos": [],
+  "sections": [
+    {
+      "title": "O que eu fiz",
+      "list": [
+        "Participei da estratégia da campanha de lançamento.",
+        "Desenvolvi o key visual da campanha.",
+        "Desenvolvi as masters das comunicações, as peças-base que orientam os desdobramentos do lançamento."
+      ]
+    }
+  ],
+  "gallery": [],
+  "diagrams": [],
+  "timeline": [],
+  "contribution": {
+    "lead": "Acompanhei a campanha de lançamento, num projeto com contribuição de Gabriela.",
+    "items": [
+      [
+        "Estratégia",
+        "Participação na estratégia de lançamento."
+      ],
+      [
+        "Key visual",
+        "Desenvolvimento do KV."
+      ],
+      [
+        "Masters",
+        "Desenvolvimento das masters das comunicações."
+      ]
+    ]
+  },
+  "code": null,
+  "facts": [
+    [
+      "Público",
+      "Santander Select"
+    ],
+    [
+      "Produto",
+      "Conta internacional"
+    ]
+  ],
+  "links": [],
+  "logo": "santander.svg"
+}

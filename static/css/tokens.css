@@ -1,0 +1,58 @@
+/* Design tokens — identidade Tessera.
+   Paleta: mármore, pedra, tinta e uma única cor viva (cinábrio, ≤ 3% da tela).
+   Tipografia: SF (sistema Apple) → Inter (OFL, demais aparelhos); Marcellus SC só para inscrição. */
+
+@font-face { font-family: "Inter"; src: url("../fonts/inter-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/inter-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/inter-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Marcellus SC"; src: url("../fonts/marcellus-sc-latin-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("../fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
+:root {
+  /* cor */
+  --marmore: #F7F6F3;
+  --travertino: #ECE9E4;
+  --pedra: #D3CEC6;
+  --tinta: #17140F;
+  --cinza: #5F5951;
+  --cinabrio: #E2421F;
+  --pompeia: #A8321C;   /* vermelho para texto < 18px (AA sobre mármore) */
+  --luz: #FF7A4D;       /* só como brilho */
+  --branco: #FFFFFF;
+
+  /* tipo */
+  --f-inscricao: "Marcellus SC", "Trajan Pro", Georgia, serif;
+  --f-texto: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --f-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+
+  --t-display: clamp(44px, 6.4vw, 96px);
+  --t-h1: clamp(38px, 5vw, 72px);
+  --t-h2: clamp(28px, 3.4vw, 48px);
+  --t-h3: clamp(21px, 1.8vw, 26px);
+  --t-lede: clamp(19px, 1.6vw, 23px);
+  --t-body: 17px;
+  --t-small: 15px;
+  --t-label: 12.5px;
+
+  /* espaço (base 8) */
+  --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --s5: 40px; --s6: 64px; --s7: 112px;
+
+  /* forma */
+  --r-pill: 999px;
+  --r-glass: 22px;
+  --r-media: 10px;
+  --linha: 1px solid var(--pedra);
+  --linha-forte: 1px solid var(--tinta);
+
+  /* movimento */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --dur: .35s;
+
+  /* layout */
+  --max: 1240px;
+  --gutter: 16px;
+  --header-h: 64px;
+  color-scheme: light;
+}
+@media (min-width: 720px) { :root { --gutter: 40px; } }

@@ -1,0 +1,774 @@
+<title>Tessera · Fabrizzio Riccelli</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Marcellus+SC&display=swap">
+<style>
+/* Layout: grid suíço de 12 colunas sobre mármore; texto no sistema da Apple (SF), inscrição romana só em nome e numerais; um único momento ousado: o emblema de tesselas que vira navegação. */
+:root{
+  --marmore:#F7F6F3;
+  --travertino:#ECE9E4;
+  --pedra:#D3CEC6;
+  --tinta:#17140F;
+  --cinza:#6B655D;
+  --cinabrio:#E2421F;
+  --pompeia:#A8321C;
+  --luz:#FF7A4D;
+  --ok:#2F6B4F;
+  --f-inscricao:"Marcellus SC", "Trajan Pro", Georgia, serif;
+  --f-texto:-apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Inter, Arial, sans-serif;
+  --f-display:-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Inter, Arial, sans-serif;
+  --f-mono:ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  --s1:4px; --s2:8px; --s3:16px; --s4:24px; --s5:40px; --s6:64px; --s7:112px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--marmore);color:var(--tinta);font-family:var(--f-texto);font-size:17px;line-height:1.5;font-weight:400;letter-spacing:-.011em;-webkit-font-smoothing:antialiased}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.06;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+::selection{background:var(--cinabrio);color:var(--marmore)}
+a{color:inherit;text-decoration-color:var(--cinabrio);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--pompeia)}
+:focus-visible{outline:2px solid var(--cinabrio);outline-offset:3px}
+
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+@media (min-width:720px){.wrap{padding-left:max(40px, env(safe-area-inset-left, 0px));padding-right:max(40px, env(safe-area-inset-right, 0px))}}
+
+.mono{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--cinza)}
+.mono b{color:var(--tinta);font-weight:500}
+.red{color:var(--pompeia)}
+.new{font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--cinabrio);padding:2px 6px;border-radius:3px;vertical-align:middle;margin-left:8px}
+
+.bar{display:flex;justify-content:space-between;align-items:center;gap:var(--s3);padding-block:var(--s4);border-bottom:1px solid var(--pedra);flex-wrap:wrap}
+.bar .dot{display:inline-block;width:7px;height:7px;background:var(--cinabrio);margin-right:8px;transform:rotate(45deg) translateY(-1px)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s4);padding-block:var(--s6) var(--s5);align-items:center}
+.hero-txt{grid-column:1 / span 6;display:flex;flex-direction:column;gap:var(--s4);min-width:0;position:relative;z-index:2}
+.hero-art{grid-column:7 / span 6;aspect-ratio:1/1;max-width:100%;position:relative;min-width:0}
+.hero-art canvas{width:100%;height:100%;display:block;transform-origin:50% 50%;will-change:transform}
+.name{font-family:var(--f-inscricao);font-weight:400;font-size:clamp(44px,6.4vw,96px);line-height:.94;letter-spacing:.035em;margin:0}
+.name span{display:block}
+.name .stop{color:var(--cinabrio)}
+.lede{font-family:var(--f-display);font-size:clamp(20px,1.7vw,24px);line-height:1.3;font-weight:400;letter-spacing:-.02em;max-width:30ch;margin:0}
+.prov{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;color:var(--cinza);border:1px dashed var(--pedra);padding:3px 7px;align-self:flex-start;text-transform:uppercase}
+.universos{list-style:none;padding:0;margin:var(--s3) 0 0;display:grid;border-top:1px solid var(--tinta)}
+.universos li{display:grid;grid-template-columns:52px 1fr auto;align-items:baseline;gap:var(--s3);padding-block:12px;border-bottom:1px solid var(--pedra);transition:padding .35s cubic-bezier(.2,.7,.2,1)}
+.universos li .num{font-family:var(--f-inscricao);font-size:20px;color:var(--cinabrio)}
+.universos li .t{font-size:18px;font-weight:500}
+.universos li:hover{padding-left:10px}
+.universos li:hover .t{color:var(--pompeia)}
+@media (max-width:860px){
+  .hero{padding-block:var(--s4) var(--s5)}
+  .hero-art{grid-column:1 / -1;order:-1;width:min(100%,440px);justify-self:center}
+  .hero-txt{grid-column:1 / -1}
+}
+
+section{padding-block:var(--s7) 0}
+.sec-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s4);margin-bottom:var(--s5);align-items:end}
+.sec-head .k{grid-column:1 / span 3}
+.sec-head h2{grid-column:4 / span 9;font-family:var(--f-display);font-weight:600;font-size:clamp(30px,3.6vw,52px);line-height:1.05;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.sec-head .numeral{font-family:var(--f-inscricao);font-size:40px;color:var(--cinabrio);line-height:1;display:block;margin-bottom:6px}
+@media (max-width:720px){.sec-head .k,.sec-head h2{grid-column:1 / -1}}
+.cols{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s4)}
+.body-col{grid-column:4 / span 7;min-width:0}
+@media (max-width:720px){.body-col{grid-column:1 / -1}}
+p{margin:0 0 var(--s3);max-width:66ch}
+
+/* tabela de referências */
+.refs{grid-column:1 / -1;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:14px 12px;border-bottom:1px solid var(--pedra)}
+th{font-family:var(--f-mono);font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--cinza);border-bottom:1px solid var(--tinta)}
+td:first-child{font-weight:600;white-space:nowrap}
+td .tag{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--cinza);display:block;font-weight:400;margin-top:2px}
+tr.no td:first-child{color:var(--cinza);text-decoration:line-through;text-decoration-color:var(--cinabrio)}
+.verdict{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.verdict.sim{color:var(--pompeia)}
+
+/* conceito */
+.pontes{grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--tinta)}
+.ponte{padding:var(--s4) var(--s4) var(--s4) 0;border-right:1px solid var(--pedra);min-width:0;display:flex;flex-direction:column;gap:var(--s2)}
+.ponte + .ponte{padding-left:var(--s4)}
+.ponte:last-child{border-right:0}
+.ponte .lat{font-family:var(--f-inscricao);font-size:26px;letter-spacing:.04em}
+.ponte .arrow{font-family:var(--f-mono);font-size:12px;color:var(--cinabrio)}
+.ponte p{font-size:15px;color:var(--cinza);margin:0}
+.ponte .hoje{font-weight:600;color:var(--tinta);font-size:15px}
+@media (max-width:900px){.pontes{grid-template-columns:repeat(2,minmax(0,1fr))}.ponte:nth-child(2){border-right:0}.ponte:nth-child(3){padding-left:0}.ponte:nth-child(n+3){border-top:1px solid var(--pedra)}}
+@media (max-width:520px){.pontes{grid-template-columns:1fr}.ponte,.ponte + .ponte{padding-left:0;border-right:0}.ponte + .ponte{border-top:1px solid var(--pedra)}}
+.manifesto{grid-column:4 / span 8;font-family:var(--f-display);font-size:clamp(22px,2.2vw,30px);line-height:1.25;font-weight:400;letter-spacing:-.025em;margin:var(--s6) 0 0;max-width:34ch}
+.manifesto em{font-style:normal;color:var(--pompeia)}
+@media (max-width:720px){.manifesto{grid-column:1 / -1}}
+
+/* paleta */
+.paleta{grid-column:1 / -1;display:grid;grid-template-columns:3fr 1.3fr 1fr 1fr .9fr .7fr;min-height:240px;border:1px solid var(--pedra)}
+.sw{padding:var(--s3);display:flex;flex-direction:column;justify-content:flex-end;gap:2px;min-width:0}
+.sw .n{font-weight:600;font-size:15px}
+.sw .h{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em}
+.sw .u{font-size:12.5px;line-height:1.35;margin-top:6px;opacity:.8}
+.sw.m{background:var(--marmore)}.sw.tr{background:var(--travertino)}.sw.pe{background:var(--pedra)}
+.sw.ti{background:var(--tinta);color:var(--marmore)}.sw.ci{background:var(--cinabrio);color:#fff}
+.sw.lu{background:radial-gradient(circle at 50% 70%, var(--luz), var(--cinabrio) 55%, var(--pompeia));color:#fff}
+@media (max-width:860px){.paleta{grid-template-columns:repeat(2,minmax(0,1fr))}.sw{min-height:120px}}
+.regra{grid-column:1 / -1;display:flex;gap:var(--s5);flex-wrap:wrap;margin-top:var(--s4)}
+.regra div{flex:1 1 240px;min-width:0;font-size:15px;color:var(--cinza)}
+.regra b{display:block;color:var(--tinta);font-weight:600;margin-bottom:4px}
+
+/* tipografia */
+.specimen{grid-column:1 / -1;display:grid;border-top:1px solid var(--tinta)}
+.face{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s4);padding-block:var(--s5);border-bottom:1px solid var(--pedra);align-items:center}
+.face .meta{grid-column:1 / span 3;display:flex;flex-direction:column;gap:6px;min-width:0}
+.face .meta .fn{font-weight:600;font-size:16px}
+.face .meta p{font-size:14px;color:var(--cinza);margin:0}
+.face .show{grid-column:4 / span 9;min-width:0;overflow-wrap:anywhere}
+.show.sf{font-family:var(--f-display);font-size:clamp(34px,4.6vw,68px);font-weight:600;line-height:1.02;letter-spacing:-.04em}
+.show.sf small{display:block;font-family:var(--f-texto);font-size:17px;font-weight:400;letter-spacing:-.011em;line-height:1.5;margin-top:var(--s3);max-width:58ch}
+.show.i{font-family:var(--f-inscricao);font-size:clamp(36px,5vw,76px);line-height:1;letter-spacing:.04em}
+.show.mo{font-family:var(--f-mono);font-size:clamp(14px,1.4vw,17px);line-height:1.8}
+.show.mo span{color:var(--cinza)}
+@media (max-width:720px){.face .meta,.face .show{grid-column:1 / -1}}
+.pesos{display:flex;flex-wrap:wrap;gap:var(--s3) var(--s5);margin-top:var(--s4)}
+.pesos span{font-family:var(--f-display);font-size:28px;letter-spacing:-.03em}
+.licenca{grid-column:1 / -1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s4);margin-top:var(--s5)}
+.licenca div{border-top:1px solid var(--pedra);padding-top:var(--s3);font-size:15px;color:var(--cinza);min-width:0}
+.licenca b{display:block;color:var(--tinta);margin-bottom:4px}
+@media (max-width:760px){.licenca{grid-template-columns:1fr}}
+
+/* elementos */
+.elementos{grid-column:1 / -1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s4)}
+.stage{grid-column:1 / span 7;position:relative;min-height:380px;overflow:hidden;background:var(--travertino);border:1px solid var(--pedra);isolation:isolate}
+.stage::before{content:"";position:absolute;inset:0;background:conic-gradient(from 90deg at 1px 1px, transparent 90deg, var(--pedra) 0) 0 0/13px 13px;opacity:.75;z-index:-2}
+.glow{position:absolute;width:58%;aspect-ratio:1;left:8%;top:12%;border-radius:50%;background:radial-gradient(circle, var(--luz) 0%, var(--cinabrio) 38%, rgba(226,66,31,0) 70%);filter:blur(28px);z-index:-1;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(42%,18%) scale(1.1)}}
+.glass{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(80%,420px);padding:var(--s4);border-radius:22px;
+  background:linear-gradient(140deg, rgba(255,255,255,.62), rgba(255,255,255,.16));
+  -webkit-backdrop-filter:blur(22px) saturate(165%);backdrop-filter:blur(22px) saturate(165%);
+  border:1px solid rgba(255,255,255,.75);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.95), inset 0 -1px 0 rgba(23,20,15,.05), 0 30px 60px -30px rgba(120,40,15,.45);
+  display:flex;flex-direction:column;gap:var(--s3)}
+.glass .top{display:flex;justify-content:space-between;gap:var(--s3)}
+.glass h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:28px;letter-spacing:-.03em;line-height:1.1}
+.glass .stack{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border:1px solid rgba(23,20,15,.18);border-radius:3px;background:rgba(255,255,255,.4)}
+.cap{grid-column:8 / span 5;display:flex;flex-direction:column;gap:var(--s4);min-width:0}
+.cap .item{border-top:1px solid var(--pedra);padding-top:var(--s3)}
+.cap .item b{display:block;font-weight:600;margin-bottom:4px}
+.cap .item p{font-size:15px;color:var(--cinza);margin:0}
+@media (max-width:860px){.stage,.cap{grid-column:1 / -1}}
+.btns{display:flex;gap:var(--s3);flex-wrap:wrap}
+.btn{font-family:var(--f-texto);font-size:15px;font-weight:500;padding:11px 18px;border:1px solid var(--tinta);background:var(--tinta);color:var(--marmore);border-radius:999px;cursor:pointer;display:inline-flex;gap:10px;align-items:center;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--cinabrio);border-color:var(--cinabrio);color:#fff}
+.btn.ghost{background:transparent;color:var(--tinta)}
+.btn.ghost:hover{color:#fff}
+
+/* navegação: protótipo com scroll */
+.nav-scroll{position:relative;height:260vh}
+.nav-sticky{position:sticky;top:env(safe-area-inset-top, 0px);height:min(100vh, 900px);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s4);align-items:center;padding-block:var(--s4)}
+.nav-art{grid-column:1 / span 6;position:relative;aspect-ratio:1/1;max-height:100%;max-width:100%;justify-self:center;width:100%;min-width:0}
+.nav-art canvas{width:100%;height:100%;display:block;cursor:pointer;touch-action:pan-y}
+.q-label{position:absolute;transform:translate(-50%,-50%);text-align:center;pointer-events:none;opacity:0;transition:color .2s}
+.q-label .qn{display:block;font-family:var(--f-inscricao);font-size:clamp(26px,3vw,40px);line-height:1;color:var(--tinta)}
+.q-label .qt{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--cinza);margin-top:4px;white-space:nowrap}
+.q-label.on .qn{color:var(--cinabrio)}
+.nav-side{grid-column:7 / span 6;display:flex;flex-direction:column;gap:var(--s3);min-width:0;max-height:100%;}
+.passos{display:flex;gap:var(--s2);flex-wrap:wrap}
+.passo{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--cinza);border:1px solid var(--pedra);padding:4px 8px;border-radius:999px;transition:all .25s}
+.passo.on{color:#fff;background:var(--tinta);border-color:var(--tinta)}
+.nav-side h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.03em;line-height:1.15;min-height:2.3em}
+.nav-side .exp{font-size:15px;color:var(--cinza);margin:0;min-height:4.5em}
+.filtros{display:flex;flex-wrap:wrap;gap:6px}
+.filtro{font-family:var(--f-texto);font-size:13.5px;font-weight:500;padding:7px 12px;border-radius:999px;border:1px solid var(--pedra);background:transparent;color:var(--tinta);cursor:pointer;transition:all .2s}
+.filtro:hover{border-color:var(--tinta)}
+.filtro[aria-pressed="true"]{background:var(--tinta);color:var(--marmore);border-color:var(--tinta)}
+.indice{list-style:none;margin:0;padding:0;border-top:1px solid var(--tinta);overflow:auto;min-height:0}
+.indice li{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:var(--s3);align-items:baseline;padding-block:10px;border-bottom:1px solid var(--pedra)}
+.indice li[hidden]{display:none}
+.indice .u{font-family:var(--f-inscricao);font-size:17px;color:var(--cinabrio)}
+.indice .p{font-weight:500;font-size:16px;min-width:0}
+.indice .p small{display:block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--cinza);font-weight:400;margin-top:2px}
+.st{font-family:var(--f-mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:3px;white-space:nowrap}
+.st.pronto{background:var(--tinta);color:var(--marmore)}
+.st.parcial{border:1px solid var(--tinta);color:var(--tinta)}
+.st.falta{border:1px dashed var(--cinabrio);color:var(--pompeia)}
+.st.produzir{background:var(--travertino);color:var(--cinza)}
+@media (max-width:860px), (prefers-reduced-motion:reduce){
+  .nav-scroll{height:auto}
+  .nav-sticky{position:static;height:auto}
+  .nav-art{grid-column:1 / -1;width:min(100%,460px)}
+  .nav-side{grid-column:1 / -1;max-height:none}
+  .passos{display:none}
+  .nav-side h3,.nav-side .exp{min-height:0}
+}
+.mapa-url{grid-column:1 / -1;overflow-x:auto;margin-top:var(--s5)}
+.mapa-url pre{margin:0;font-family:var(--f-mono);font-size:13px;line-height:1.75;background:var(--travertino);border:1px solid var(--pedra);padding:var(--s4);min-width:560px}
+.mapa-url pre b{color:var(--pompeia);font-weight:500}
+.mapa-url pre i{font-style:normal;color:var(--cinza)}
+.regras-nav{grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s4);margin-top:var(--s5)}
+.regras-nav div{border-top:2px solid var(--tinta);padding-top:var(--s3);font-size:15px;color:var(--cinza);min-width:0}
+.regras-nav b{display:block;color:var(--tinta);margin-bottom:4px}
+@media (max-width:900px){.regras-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.regras-nav{grid-template-columns:1fr}}
+
+/* inventário */
+.inv{grid-column:1 / -1;overflow-x:auto}
+.inv table{min-width:820px}
+.inv td:nth-child(4){font-size:14px;color:var(--cinza)}
+.pedidos{grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s3);margin-top:var(--s5)}
+.pedido{border:1px dashed var(--cinabrio);padding:var(--s3);display:flex;flex-direction:column;gap:6px;min-width:0}
+.pedido b{font-weight:600}
+.pedido p{font-size:14px;color:var(--cinza);margin:0}
+@media (max-width:900px){.pedidos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.pedidos{grid-template-columns:1fr}}
+
+/* anatomia do case */
+.anat{grid-column:1 / -1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s4)}
+.folha{grid-column:1 / span 5;border:1px solid var(--tinta);padding:var(--s3);display:grid;gap:8px;align-content:start;background:var(--marmore);min-width:0}
+.fb{border:1px solid var(--pedra);padding:10px 12px;display:flex;justify-content:space-between;gap:var(--s3);align-items:baseline;cursor:pointer;text-align:left;font:inherit;background:transparent;color:inherit;width:100%;transition:border-color .2s, background .2s}
+.fb .l{font-weight:500;font-size:14.5px}
+.fb .d{font-family:var(--f-mono);font-size:10px;color:var(--cinza);letter-spacing:.05em;text-transform:uppercase;text-align:right}
+.fb.media{min-height:120px;align-items:flex-start;background:var(--travertino)}
+.fb[aria-pressed="true"]{border-color:var(--cinabrio);background:#fff}
+.fb[aria-pressed="true"] .l{color:var(--pompeia)}
+.detalhe{grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:var(--s3)}
+.detalhe h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:28px;letter-spacing:-.03em}
+.detalhe p{color:var(--cinza);font-size:16px}
+.detalhe .ex{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.04em;color:var(--tinta);border-left:2px solid var(--cinabrio);padding-left:12px;text-transform:uppercase;line-height:1.7}
+@media (max-width:860px){.folha,.detalhe{grid-column:1 / -1}}
+.midia{grid-column:1 / -1;overflow-x:auto;margin-top:var(--s6)}
+.midia table{min-width:780px}
+
+/* proibido / decisões */
+.evitar{grid-column:1 / -1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s4)}
+.evitar div{border-top:2px solid var(--tinta);padding-top:var(--s3);min-width:0}
+.evitar b{display:block;margin-bottom:6px}
+.evitar p{font-size:15px;color:var(--cinza);margin:0}
+@media (max-width:760px){.evitar{grid-template-columns:1fr}}
+.decisoes{grid-column:1 / -1;list-style:none;margin:0;padding:0;counter-reset:d;border-top:1px solid var(--tinta)}
+.decisoes li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:var(--s4);padding-block:var(--s4);border-bottom:1px solid var(--pedra)}
+.decisoes li::before{counter-increment:d;content:counter(d, upper-roman);font-family:var(--f-inscricao);font-size:30px;color:var(--cinabrio);line-height:1}
+.decisoes b{display:block;font-size:19px;font-weight:600;margin-bottom:4px}
+.decisoes p{margin:0;color:var(--cinza);font-size:15.5px}
+footer{margin-top:var(--s7);border-top:1px solid var(--pedra);padding-block:var(--s4) var(--s5);display:flex;justify-content:space-between;gap:var(--s3);flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){.glow{animation:none}.universos li{transition:none}html{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+  <header class="bar">
+    <span class="mono"><span class="dot" aria-hidden="true"></span><b>Fabrizzio Riccelli</b> · Direção criativa v2</span>
+    <span class="mono">XVI · XI · MMXXVI · Para aprovação</span>
+  </header>
+
+  <div class="hero" id="topo">
+    <div class="hero-txt">
+      <span class="mono">Portfólio · MMXXVI</span>
+      <h1 class="name"><span>Fabrizzio</span><span>Riccelli<span class="stop">.</span></span></h1>
+      <p class="lede">Dados, inteligência artificial e comunicação. Projetos de tecnologia, marketing e design.</p>
+      <span class="prov">Texto provisório · definimos na fase de conteúdo</span>
+      <ul class="universos" aria-label="Universos do portfólio">
+        <li><span class="num">I</span><span class="t">Tecnologia &amp; IA</span><span class="mono">3 projetos</span></li>
+        <li><span class="num">II</span><span class="t">Marketing &amp; Comunicação</span><span class="mono">Santander</span></li>
+        <li><span class="num">III</span><span class="t">Branding &amp; Design</span><span class="mono">Behance</span></li>
+        <li><span class="num">IV</span><span class="t">Sobre &amp; Contato</span><span class="mono">LinkedIn · CV</span></li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <canvas id="emblema" role="img" aria-label="Emblema de mosaico formado por milhares de tesselas. Passe o cursor para mover a luz vermelha."></canvas>
+    </div>
+  </div>
+  <p class="mono" style="margin:0">↑ Hero. Passe o cursor sobre o emblema. Na seção VI você vê o que ele faz quando a página rola.</p>
+
+  <!-- I -->
+  <section id="referencia">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">I</span><span class="mono">Leitura da referência</span></div>
+      <h2>Da biblioteca da Profitize, separei o que combina com você e o que fica de fora.</h2>
+    </div>
+    <div class="cols">
+      <div class="body-col"><p>Olhei os 65 layouts e analisei de perto os doze mais próximos de um portfólio. Nenhum deles vira o seu site. De cada um tiro um princípio, e a soma desses princípios forma a direção.</p></div>
+      <div class="refs" role="region" aria-label="Tabela de referências" tabindex="0">
+        <table>
+          <thead><tr><th>Layout</th><th>O que levamos</th><th>O que deixamos</th><th>Veredito</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://profitize.com.br/build/landing-pages/margem" target="_blank" rel="noopener">Margem</a><span class="tag">Estúdio criativo</span></td><td>Fundo claro, galeria de projetos que se abre com zoom no scroll.</td><td>Logotipo gigante na base da tela.</td><td class="verdict sim">Navegação</td></tr>
+            <tr><td><a href="https://profitize.com.br/build/landing-pages/sopro" target="_blank" rel="noopener">Sopro</a><span class="tag">Estúdio criativo</span></td><td>Tipografia enorme tratada como imagem e um único objeto vermelho com volume.</td><td>As manchas de tinta preta.</td><td class="verdict sim">Gesto tipográfico</td></tr>
+            <tr><td><a href="https://profitize.com.br/build/landing-pages/veio" target="_blank" rel="noopener">Veio</a><span class="tag">Joalheria</span></td><td>Caixa alta clássica sobre branco, sobriedade editorial e muito ar.</td><td>O tom de luxo e moda.</td><td class="verdict sim">Inscrição</td></tr>
+            <tr><td><a href="https://profitize.com.br/build/landing-pages/ceru" target="_blank" rel="noopener">Ceru</a><span class="tag">Plataforma de IA</span></td><td>Imagem pontilhada como textura com significado técnico.</td><td>O céu azul e a interface de chat.</td><td class="verdict sim">Textura</td></tr>
+            <tr><td><a href="https://profitize.com.br/build/landing-pages/tecla" target="_blank" rel="noopener">Tecla</a><span class="tag">Tech</span></td><td>Rótulos em mono, relógio local no topo e precisão de produto.</td><td>O fundo preto.</td><td class="verdict sim">Metadados</td></tr>
+            <tr><td><a href="https://profitize.com.br/build/landing-pages/lampo" target="_blank" rel="noopener">Lampo</a><span class="tag">Agência de IA</span></td><td>Vermelho tratado como luz e gradiente.</td><td>A atmosfera escura.</td><td class="verdict sim">Luz</td></tr>
+            <tr class="no"><td><a href="https://profitize.com.br/build/landing-pages/kairo" target="_blank" rel="noopener">Kairo</a><span class="tag">Portfólio de dev</span></td><td>Só a ideia de um atalho “ver um case por dentro”.</td><td>Fundo escuro, foto com luz vermelha e números grandes sem fonte.</td><td class="verdict">Fora</td></tr>
+            <tr class="no"><td><a href="https://profitize.com.br/build/landing-pages/nubo" target="_blank" rel="noopener">Nubo</a><span class="tag">Software house</span></td><td>Nada.</td><td>Tom lúdico, que você descartou.</td><td class="verdict">Fora</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- II -->
+  <section id="conceito">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">II</span><span class="mono">Conceito</span></div>
+      <h2>Tessera. A peça pequena que, junto com milhares de outras, forma uma imagem.</h2>
+    </div>
+    <div class="cols">
+      <div class="body-col">
+        <p>O mosaico romano é feito de tesselas, pequenos cubos de pedra e vidro. No <i>opus vermiculatum</i>, as peças seguem as curvas do desenho: uma imagem feita de pixels dois mil anos antes do pixel. Também é uma boa metáfora para a sua trajetória: áreas diferentes que formam uma imagem só.</p>
+      </div>
+      <div class="pontes">
+        <div class="ponte"><span class="lat">Tessera</span><span class="arrow">→ hoje</span><span class="hoje">Pixel, dado, neurônio</span><p>O emblema do hero é um mosaico gerado em código e também é o menu do site.</p></div>
+        <div class="ponte"><span class="lat">Cinnabaris</span><span class="arrow">→ hoje</span><span class="hoje">O seu vermelho</span><p>Pigmento dos vermelhos das paredes de Pompeia, distante do vermelho do banco.</p></div>
+        <div class="ponte"><span class="lat">Vitrum</span><span class="arrow">→ hoje</span><span class="hoje">Liquid Glass</span><p>O vidro romano vira a camada translúcida que filtra a luz vermelha.</p></div>
+        <div class="ponte"><span class="lat">Capitalis</span><span class="arrow">→ hoje</span><span class="hoje">Inscrição</span><p>As capitais da Coluna de Trajano entram só no nome e nos numerais.</p></div>
+      </div>
+      <p class="manifesto">A clareza de um produto Apple, com uma <em>assinatura romana</em> nos detalhes.</p>
+    </div>
+  </section>
+
+  <!-- III -->
+  <section id="paleta">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">III</span><span class="mono">Paleta</span></div>
+      <h2>Mármore, pedra, tinta e uma única cor viva.</h2>
+    </div>
+    <div class="cols">
+      <div class="paleta">
+        <div class="sw m"><span class="n">Mármore</span><span class="h">#F7F6F3</span><span class="u">Fundo. Um branco frio, longe do creme.</span></div>
+        <div class="sw tr"><span class="n">Travertino</span><span class="h">#ECE9E4</span><span class="u">Superfícies secundárias.</span></div>
+        <div class="sw pe"><span class="n">Pedra</span><span class="h">#D3CEC6</span><span class="u">Linhas e divisões.</span></div>
+        <div class="sw ti"><span class="n">Tinta</span><span class="h">#17140F</span><span class="u">Texto.</span></div>
+        <div class="sw ci"><span class="n">Cinábrio</span><span class="h">#E2421F</span><span class="u">Assinatura.</span></div>
+        <div class="sw lu"><span class="n">Luz</span><span class="h">#FF7A4D</span><span class="u">Só brilho.</span></div>
+      </div>
+      <div class="regra">
+        <div><b>Regra dos 3%</b>O cinábrio ocupa no máximo 3% de qualquer tela: links, numerais, cursor, um ponto final.</div>
+        <div><b>Vermelho em texto pequeno</b>Abaixo de 18px, o vermelho usa o tom Pompeia (#A8321C), que passa no contraste AA.</div>
+        <div><b>Sem modo escuro</b>A identidade é clara por decisão sua.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IV -->
+  <section id="tipografia">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">IV</span><span class="mono">Tipografia <span class="new">Ajustado</span></span></div>
+      <h2>San Francisco como voz principal. A inscrição romana só onde ela assina.</h2>
+    </div>
+    <div class="cols">
+      <div class="specimen">
+        <div class="face">
+          <div class="meta"><span class="mono red">Principal · 95% do site</span><span class="fn">SF Pro (sistema Apple)</span><p>Títulos, textos e interface. No Mac e no iPhone, o navegador usa a própria San Francisco do sistema, com os tamanhos ópticos Display e Text.</p></div>
+          <div class="show sf">Relatórios editados na própria página.<small>A SF tem o equilíbrio que você quer: neutra como a Helvetica, mais legível em tela e com o acabamento dos produtos da Apple. Títulos usam peso Semibold com espaçamento apertado. O texto corrido usa Regular.</small>
+            <div class="pesos" aria-label="Pesos"><span style="font-weight:300">Light</span><span style="font-weight:400">Regular</span><span style="font-weight:500">Medium</span><span style="font-weight:600">Semibold</span></div>
+          </div>
+        </div>
+        <div class="face">
+          <div class="meta"><span class="mono red">Assinatura · 5% do site</span><span class="fn">Marcellus SC</span><p>Nome, numerais I–IV e capa dos cases. Nunca em parágrafos, botões ou menus.</p></div>
+          <div class="show i">Riccelli · I · II · III · IV</div>
+        </div>
+        <div class="face">
+          <div class="meta"><span class="mono red">Metadados e código</span><span class="fn">SF Mono (sistema Apple)</span><p>Stack, ano, tipo de projeto e trechos de código. Mantém a família Apple.</p></div>
+          <div class="show mo">PROFISSIONAL · SANTANDER · 2026<br><span>stack</span> html · css · javascript · playwright<br><span>testes</span> 18 suítes e2e e unitárias</div>
+        </div>
+      </div>
+      <div class="licenca">
+        <div><b>Por que não hospedar a SF</b>A licença da Apple só permite usar a San Francisco em layouts para plataformas da Apple. Ela não pode ser baixada e servida no site. Por isso usamos a fonte que já vem no sistema do visitante, o que é permitido e carrega instantaneamente.</div>
+        <div><b>E no Windows e no Android?</b>Nesses aparelhos entra a Inter, que foi desenhada com proporções muito próximas às da SF e tem licença livre (OFL). A Helvetica fica fora porque não vem no Windows e a versão para web é paga.</div>
+        <div><b>Se quiser Helvetica de verdade</b>A Neue Haas Unica ou a Helvetica Now (Monotype) têm licença web paga. Dá para trocar depois sem mexer no layout, porque tudo usa a mesma variável de fonte.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- V -->
+  <section id="elementos">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">V</span><span class="mono">Elementos do sistema</span></div>
+      <h2>O vidro aparece em um só lugar: quando você abre um projeto.</h2>
+    </div>
+    <div class="cols">
+      <div class="elementos">
+        <div class="stage" aria-label="Exemplo de card de vidro sobre a luz vermelha">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="glass">
+            <div class="top"><span class="mono"><b>I · Tecnologia &amp; IA</b></span><span class="mono">2026</span></div>
+            <h3>Emulador Report</h3>
+            <p style="margin:0;font-size:15px">O report mensal de performance editado na própria página e transformado em e-mail executivo para o Outlook.</p>
+            <div class="stack"><span class="chip">JavaScript</span><span class="chip">Playwright</span><span class="chip">E-mail HTML</span></div>
+          </div>
+        </div>
+        <div class="cap">
+          <div class="item"><b>Vidro com função</b><p>O Liquid Glass fica reservado à pré-visualização dos projetos e aparece sempre sobre a luz.</p></div>
+          <div class="item"><b>Numerais romanos</b><p>Cada numeral é um universo do portfólio. É informação, não enfeite.</p></div>
+          <div class="item"><b>Botões em pílula</b><p>Formato herdado da interface da Apple. Pretos em repouso, cinábrio ao passar o cursor.</p></div>
+          <div class="btns"><button class="btn" type="button">Ver projeto →</button><button class="btn ghost" type="button">Código ↗</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VI NAVEGAÇÃO -->
+  <section id="navegacao">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">VI</span><span class="mono">Navegação <span class="new">Novo</span></span></div>
+      <h2>O emblema é o menu. Role devagar para ver como ele se divide.</h2>
+    </div>
+  </section>
+</div>
+
+<div class="nav-scroll" id="navScroll">
+  <div class="wrap">
+    <div class="nav-sticky">
+      <div class="nav-art" id="navArt">
+        <canvas id="emblemaNav" role="img" aria-label="Emblema dividido em quatro quadrantes, um por universo. Clique em um quadrante para filtrar a lista de projetos."></canvas>
+        <span class="q-label" data-q="0"><span class="qn">I</span><span class="qt">Tecnologia &amp; IA</span></span>
+        <span class="q-label" data-q="1"><span class="qn">II</span><span class="qt">Marketing</span></span>
+        <span class="q-label" data-q="2"><span class="qn">III</span><span class="qt">Design</span></span>
+        <span class="q-label" data-q="3"><span class="qn">IV</span><span class="qt">Sobre</span></span>
+      </div>
+      <div class="nav-side">
+        <div class="passos" aria-hidden="true"><span class="passo on" data-p="0">1 · Emblema</span><span class="passo" data-p="1">2 · Divisão</span><span class="passo" data-p="2">3 · Índice</span></div>
+        <h3 id="navTitulo">O visitante chega e vê o emblema inteiro.</h3>
+        <p class="exp" id="navExp">Nada se mexe sozinho além da luz. O nome e o menu do topo já mostram os quatro universos para quem tem pressa.</p>
+        <div class="filtros" role="group" aria-label="Filtrar projetos por universo">
+          <button class="filtro" type="button" data-f="all" aria-pressed="true">Todos</button>
+          <button class="filtro" type="button" data-f="0" aria-pressed="false">I · Tecnologia</button>
+          <button class="filtro" type="button" data-f="1" aria-pressed="false">II · Marketing</button>
+          <button class="filtro" type="button" data-f="2" aria-pressed="false">III · Design</button>
+          <button class="filtro" type="button" data-f="3" aria-pressed="false">IV · Sobre</button>
+        </div>
+        <ul class="indice" id="indice" aria-live="polite">
+          <li data-u="0"><span class="u">I</span><span class="p">Emulador Report<small>Profissional · Santander · 2026</small></span><span class="st pronto">Pronto</span></li>
+          <li data-u="0"><span class="u">I</span><span class="p">Frota Pulse<small>Acadêmico · FIAP · grupo · 2026</small></span><span class="st parcial">Parcial</span></li>
+          <li data-u="0"><span class="u">I</span><span class="p">FarmTech Solutions<small>Acadêmico · FIAP · grupo · 2026</small></span><span class="st parcial">Parcial</span></li>
+          <li data-u="1"><span class="u">II</span><span class="p">Santander Rewards<small>Profissional · Santander</small></span><span class="st falta">Falta material</span></li>
+          <li data-u="1"><span class="u">II</span><span class="p">Select e Private<small>Profissional · Santander</small></span><span class="st falta">Falta material</span></li>
+          <li data-u="1"><span class="u">II</span><span class="p">CRM e comunicação dirigida<small>Profissional · Santander</small></span><span class="st falta">Falta material</span></li>
+          <li data-u="2"><span class="u">III</span><span class="p">Projetos do Behance<small>Profissional e autoral</small></span><span class="st falta">Falta link</span></li>
+          <li data-u="2"><span class="u">III</span><span class="p">Identidade visual<small>Conceitual</small></span><span class="st produzir">A produzir</span></li>
+          <li data-u="2"><span class="u">III</span><span class="p">Produto digital A e B<small>Conceitual · UX/UI</small></span><span class="st produzir">A produzir</span></li>
+          <li data-u="3"><span class="u">IV</span><span class="p">Trajetória, formação e CV<small>LinkedIn · FIAP</small></span><span class="st falta">Falta material</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section style="padding-top:var(--s6)">
+    <div class="cols">
+      <div class="body-col"><p>A animação existe só no desktop. No celular e para quem desativa animações no sistema, o emblema já aparece dividido e funciona como um menu de quatro botões, sem prender o scroll.</p></div>
+      <div class="mapa-url" role="region" aria-label="Mapa de páginas" tabindex="0">
+<pre><b>/</b>                         <i>home: emblema → divisão → índice de projetos</i>
+<b>/tecnologia</b>               <i>I · lista do universo, filtro por tipo</i>
+  /tecnologia/emulador-report  <i>página de case completa</i>
+  /tecnologia/frota-pulse
+  /tecnologia/farmtech
+<b>/marketing</b>                <i>II · cases Santander</i>
+<b>/design</b>                   <i>III · Behance + projetos conceituais</i>
+<b>/sobre</b>                    <i>IV · trajetória, formação, CV para baixar, contato</i></pre>
+      </div>
+      <div class="regras-nav">
+        <div><b>Três cliques</b>Da home até qualquer case: universo, projeto e seção do case.</div>
+        <div><b>Menu sempre visível</b>A barra do topo mostra I · II · III · IV e Contato em todas as páginas.</div>
+        <div><b>Rótulo de tipo</b>Cada projeto diz se é profissional, acadêmico, autoral ou conceitual.</div>
+        <div><b>Próximo case</b>No fim de cada case, um atalho leva ao próximo projeto do mesmo universo.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VII INVENTÁRIO -->
+  <section id="conteudo">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">VII</span><span class="mono">Conteúdo <span class="new">Novo</span></span></div>
+      <h2>O que já existe, o que falta e o que eu preciso de você.</h2>
+    </div>
+    <div class="cols">
+      <div class="body-col"><p>Li o seu GitHub público, que hoje tem dois repositórios, e o Frota Pulse que você me enviou. O LinkedIn bloqueia acesso automático, então ele precisa vir de você.</p></div>
+      <div class="inv" role="region" aria-label="Inventário de projetos" tabindex="0">
+        <table>
+          <thead><tr><th>Projeto</th><th>Tipo</th><th>Material disponível</th><th>Observação</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Emulador Report<span class="tag">I · e também II</span></td><td>Profissional</td><td>4 GIFs e vídeos gravados da ferramenta, demo interativa, 7 diagramas, capturas de tela, CHANGELOG com a evolução das versões</td><td>Já usa dados fictícios e traz aviso de não vínculo com o Santander. É o case principal do site.</td><td><span class="st pronto">Pronto</span></td></tr>
+            <tr><td>Frota Pulse<span class="tag">I · FIAP × Sem Parar</span></td><td>Acadêmico, grupo de 5</td><td>7 diagramas, 5 gráficos (CUSUM, LMDI, cenários), 3 wireframes, capa</td><td>O repositório não aparece mais como público no GitHub. Ele vai continuar público?</td><td><span class="st parcial">Parcial</span></td></tr>
+            <tr><td>FarmTech Solutions<span class="tag">I · FIAP</span></td><td>Acadêmico, grupo</td><td>Protótipo publicado no Vercel, código em Python e R</td><td>Preciso saber a sua parte. O design de origem é seu?</td><td><span class="st parcial">Parcial</span></td></tr>
+            <tr><td>Santander Rewards, Select, Private, CRM<span class="tag">II</span></td><td>Profissional</td><td>Nenhum ainda</td><td>Precisamos decidir o que pode ser mostrado em público.</td><td><span class="st falta">Falta</span></td></tr>
+            <tr><td>Behance<span class="tag">III</span></td><td>Profissional e autoral</td><td>Nenhum ainda</td><td>Com o link, reconstruo as apresentações na identidade do site.</td><td><span class="st falta">Falta</span></td></tr>
+            <tr><td>Três cases conceituais<span class="tag">III</span></td><td>Conceitual</td><td>Produzidos por mim depois da aprovação</td><td>Sempre identificados como conceituais.</td><td><span class="st produzir">A produzir</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pedidos">
+        <div class="pedido"><b>LinkedIn em PDF</b><p>No perfil: Mais → Salvar como PDF. Traz cargos, datas e formação.</p></div>
+        <div class="pedido"><b>Link do Behance</b><p>Com ele, reconstruo cada projeto no padrão do site.</p></div>
+        <div class="pedido"><b>Material do Santander</b><p>Peças, vídeos e prints que já são públicos (campanhas veiculadas).</p></div>
+        <div class="pedido"><b>Currículo atual</b><p>Para o botão de download na página Sobre.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIII CASE -->
+  <section id="case">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">VIII</span><span class="mono">Página de case <span class="new">Novo</span></span></div>
+      <h2>O projeto é apresentado dentro do site. O link para o GitHub fica no fim, como prova.</h2>
+    </div>
+    <div class="cols">
+      <div class="anat">
+        <div class="folha" role="group" aria-label="Anatomia da página de case. Clique em um bloco.">
+          <button class="fb" type="button" data-b="0" aria-pressed="true"><span class="l">Capa</span><span class="d">Título · tipo · papel · stack</span></button>
+          <button class="fb" type="button" data-b="1" aria-pressed="false"><span class="l">Em 30 segundos</span><span class="d">Problema · resposta · diferencial</span></button>
+          <button class="fb media" type="button" data-b="2" aria-pressed="false"><span class="l">Vídeo do projeto funcionando</span><span class="d">Gravação real · em loop · com controles</span></button>
+          <button class="fb" type="button" data-b="3" aria-pressed="false"><span class="l">Demo interativa</span><span class="d">Dentro de uma moldura de aparelho</span></button>
+          <button class="fb" type="button" data-b="4" aria-pressed="false"><span class="l">Como funciona</span><span class="d">Diagramas na identidade do site</span></button>
+          <button class="fb" type="button" data-b="5" aria-pressed="false"><span class="l">Processo e versões</span><span class="d">Linha do tempo</span></button>
+          <button class="fb" type="button" data-b="6" aria-pressed="false"><span class="l">Minha contribuição</span><span class="d">O que foi meu · como usei IA</span></button>
+          <button class="fb" type="button" data-b="7" aria-pressed="false"><span class="l">Código e links</span><span class="d">Trecho comentado · GitHub</span></button>
+        </div>
+        <div class="detalhe" aria-live="polite">
+          <span class="mono red" id="bNum">Bloco 1 de 8</span>
+          <h3 id="bTit">Capa</h3>
+          <p id="bTxt">Abre com o título, uma frase sobre o projeto e quatro dados fixos: tipo (profissional, acadêmico, autoral ou conceitual), seu papel, ano e stack. Ao fundo, um emblema de tesselas próprio do projeto, gerado a partir dos dados dele.</p>
+          <span class="ex" id="bEx">Ex.: Emulador Report · Profissional · Dono do produto · 2026 · JavaScript, Playwright</span>
+        </div>
+      </div>
+      <div class="midia" role="region" aria-label="Como produzir a mídia de cada projeto" tabindex="0">
+        <table>
+          <thead><tr><th>Se o projeto tem…</th><th>Como apresentamos dentro do site</th><th>Como eu produzo</th></tr></thead>
+          <tbody>
+            <tr><td>Um sistema que roda</td><td>Vídeo curto (20–40 s) do uso real, em loop e sem som, mais a demo interativa</td><td>Gravação automatizada do navegador com Playwright e edição com ffmpeg. É o mesmo processo que já gerou os GIFs do Emulador Report.</td></tr>
+            <tr><td>Só imagens</td><td>Galeria que abre em tela cheia com zoom, mais um vídeo de apresentação com movimento de câmera sobre as peças</td><td>Montagem em código com as imagens originais, sem recriar nada que não exista</td></tr>
+            <tr><td>Só código e dados</td><td>Diagramas e gráficos animados gerados a partir dos dados reais do repositório</td><td>Os gráficos do Frota Pulse (CUSUM, LMDI) refeitos na paleta do site e animados no scroll</td></tr>
+            <tr><td>Material confidencial</td><td>Recriação com dados fictícios, com aviso claro</td><td>O mesmo cuidado que o Emulador Report já tem no README</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- IX -->
+  <section id="evitar">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">IX</span><span class="mono">O que fica proibido</span></div>
+      <h2>Os três caminhos que transformariam o romano em fantasia.</h2>
+    </div>
+    <div class="cols">
+      <div class="evitar">
+        <div><b>Busto de estátua</b><p>Nenhuma escultura, coluna ou louro.</p></div>
+        <div><b>Dourado e tom de épico</b><p>O romano aparece na proporção das letras e no método do mosaico.</p></div>
+        <div><b>Latim como enfeite</b><p>No site, tudo vem em português claro.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- X -->
+  <section id="decisoes">
+    <div class="sec-head">
+      <div class="k"><span class="numeral">X</span><span class="mono">Para aprovar</span></div>
+      <h2>Três decisões para fechar a identidade e começar o site.</h2>
+    </div>
+    <div class="cols">
+      <ol class="decisoes">
+        <li><div><b>SF no sistema e Inter nos outros aparelhos serve?</b><p>Ou você prefere investir em uma Helvetica com licença web paga, igual em todos os aparelhos.</p></div></li>
+        <li><div><b>A navegação pelo emblema resolve?</b><p>Emblema, divisão em quatro e índice de projetos na home, com menu fixo no topo para quem tem pressa.</p></div></li>
+        <li><div><b>O Emulador Report abre o portfólio?</b><p>Ele é o projeto mais completo e já tem vídeo, demo e diagramas. Começar por ele serve de modelo para os outros cases.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <span class="mono">Direção criativa · v2</span>
+    <a class="mono" href="#topo">Voltar ao topo ↑</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const css = getComputedStyle(document.documentElement);
+  const hex = v => { const h = css.getPropertyValue(v).trim().replace('#',''); return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)]; };
+  const MARBLE = [[244,243,240],[236,234,229],[228,225,219],[219,215,208],[247,246,243]];
+  const STONE = [[201,195,186],[190,183,173],[208,202,193]];
+  const INK = hex('--tinta'), CIN = hex('--cinabrio'), LUZ = hex('--luz'), POMP = hex('--pompeia');
+  const ease = t => 1 - Math.pow(1-t,3);
+  const mix = (a,b,k) => [a[0]+(b[0]-a[0])*k, a[1]+(b[1]-a[1])*k, a[2]+(b[2]-a[2])*k];
+  // quadrantes na ordem de leitura: I sup. esq., II sup. dir., III inf. esq., IV inf. dir.
+  const QDIR = [[-1,-1],[1,-1],[-1,1],[1,1]].map(([x,y])=>[x/Math.SQRT2,y/Math.SQRT2]);
+  const quadOf = (dx,dy) => (dy<0 ? (dx<0?0:1) : (dx<0?2:3));
+
+  function Emblem(cv, opts){
+    const ctx = cv.getContext('2d');
+    let W=0,H=0,dpr=1,tiles=[],R=0,cx=0,cy=0,t0=performance.now();
+    let px=null,py=null,lx=0,ly=0,visible=true,raf=null;
+    const st = {split:0, hover:-1, active:-1};
+    let seed;
+    const rnd = () => (seed = (seed*1664525+1013904223)>>>0, seed/4294967296);
+    function build(){
+      const r = cv.getBoundingClientRect();
+      dpr = Math.min(window.devicePixelRatio||1, 2);
+      W = r.width; H = r.height; if(!W||!H) return;
+      cv.width = Math.round(W*dpr); cv.height = Math.round(H*dpr);
+      cx = W/2; cy = H/2; R = Math.min(W,H)*(opts.scale||0.47);
+      seed = 20261116; tiles = [];
+      const s = Math.max(6.5, R/31), step = s*1.1;
+      const rings = Math.floor((R - s*0.6)/step)+1; let ring = 0;
+      for(let rr = s*0.6; rr < R; rr += step, ring++){
+        const n = Math.max(1, Math.round(2*Math.PI*rr/step));
+        const off = rnd()*Math.PI*2, fromOut = rings-1-ring;
+        for(let i=0;i<n;i++){
+          const a = off + i/n*Math.PI*2, nr = rr/R;
+          let col;
+          if(fromOut===0 || fromOut===3) col = INK;
+          else if(fromOut===1 || fromOut===2) col = MARBLE[(rnd()*MARBLE.length)|0];
+          else if(Math.abs(nr-0.58) < step/R*0.9) col = (i%2? CIN : POMP);
+          else {
+            const petal = 0.18 + 0.30*Math.pow(Math.abs(Math.cos(a*4)),1.6);
+            if(nr < petal && nr > 0.08) col = STONE[(rnd()*STONE.length)|0];
+            else if(nr <= 0.08) col = CIN;
+            else col = MARBLE[(rnd()*MARBLE.length)|0];
+          }
+          const ox = Math.cos(a)*rr + (rnd()-.5)*s*0.12, oy = Math.sin(a)*rr + (rnd()-.5)*s*0.12;
+          const ang = a + Math.PI/2 + (rnd()-.5)*0.14, sz = s*(0.84 + rnd()*0.1);
+          const sa = rnd()*Math.PI*2, sd = R*(0.25+rnd()*0.6);
+          tiles.push({ox,oy,ang,sz,col,q:quadOf(ox,oy),
+            sx: ox + Math.cos(sa)*sd, sy: oy + Math.sin(sa)*sd, sang: ang + (rnd()-.5)*3,
+            delay: opts.assemble ? nr*650 + rnd()*350 : 0});
+        }
+      }
+      lx = cx + R*0.35; ly = cy - R*0.3;
+      if(opts.onLayout) opts.onLayout({cx,cy,R,W,H});
+    }
+    function draw(now){
+      const el = now - t0;
+      ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
+      let tx, ty;
+      if(px!==null){ tx=px; ty=py; }
+      else if(st.hover>=0 && st.split>0.5){ const d=QDIR[st.hover]; tx = cx + d[0]*R*0.5; ty = cy + d[1]*R*0.5; }
+      else { const k = reduce ? 0 : now/5200; tx = cx + Math.cos(k)*R*0.42; ty = cy + Math.sin(k*1.3)*R*0.36; }
+      lx += (tx-lx)*0.12; ly += (ty-ly)*0.12;
+      const sig2 = 2*Math.pow(R*0.26,2), gap = st.split*R*0.16, sc = 1 - st.split*0.14;
+      let assembling = false;
+      for(const t of tiles){
+        const k = (reduce||!opts.assemble) ? 1 : Math.min(1, Math.max(0,(el - t.delay)/1100));
+        if(k<1) assembling = true;
+        const e = ease(k), d = QDIR[t.q];
+        const bx = (t.sx + (t.ox - t.sx)*e)*sc + d[0]*gap, by = (t.sy + (t.oy - t.sy)*e)*sc + d[1]*gap;
+        const x = cx + bx, y = cy + by, ang = t.sang + (t.ang - t.sang)*e;
+        const dx = x-lx, dy = y-ly, L = Math.exp(-(dx*dx+dy*dy)/sig2);
+        const isInk = t.col===INK;
+        let c = isInk ? mix(INK, POMP, L*0.6) : mix(t.col, L>0.5? LUZ : CIN, L*0.78);
+        let alpha = e;
+        const focus = st.active>=0 ? st.active : (st.split>0.5 ? st.hover : -1);
+        if(focus>=0 && st.split>0.3 && t.q!==focus) alpha *= 0.38;
+        const sz = t.sz*sc*(1 + L*0.16);
+        ctx.globalAlpha = alpha;
+        ctx.setTransform(dpr*Math.cos(ang), dpr*Math.sin(ang), -dpr*Math.sin(ang), dpr*Math.cos(ang), x*dpr, y*dpr);
+        ctx.fillStyle = 'rgb('+(c[0]|0)+','+(c[1]|0)+','+(c[2]|0)+')';
+        ctx.fillRect(-sz/2,-sz/2,sz,sz);
+        if(L>0.25){ ctx.fillStyle='rgba(255,255,255,'+(L*0.35).toFixed(3)+')'; ctx.fillRect(-sz/2,-sz/2,sz,sz*0.28); }
+      }
+      ctx.globalAlpha = 1;
+      const moving = Math.abs(tx-lx)+Math.abs(ty-ly) > 0.5;
+      if(visible && (!reduce || assembling || moving)) raf = requestAnimationFrame(draw); else raf = null;
+    }
+    function kick(){ if(!raf) raf = requestAnimationFrame(draw); }
+    function local(e){ const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
+    cv.addEventListener('pointermove', e=>{ [px,py] = local(e); if(opts.onHover) opts.onHover(quadOf(px-cx,py-cy)); kick(); });
+    cv.addEventListener('pointerleave', ()=>{ px=null; py=null; if(opts.onHover) opts.onHover(-1); kick(); });
+    cv.addEventListener('click', e=>{ const [x,y] = local(e); if(opts.onPick) opts.onPick(quadOf(x-cx,y-cy)); });
+    new IntersectionObserver(es=>{ visible = es[0].isIntersecting; if(visible) kick(); }).observe(cv);
+    let rt; window.addEventListener('resize', ()=>{ clearTimeout(rt); rt = setTimeout(()=>{ build(); kick(); }, 120); });
+    return { start(){ build(); t0 = performance.now(); kick(); }, st, kick, geom:()=>({cx,cy,R,W,H}) };
+  }
+
+  // HERO
+  const hero = Emblem(document.getElementById('emblema'), {assemble:true});
+  const heroCv = document.getElementById('emblema');
+  if(!reduce){
+    const onScroll = () => { const p = Math.min(1, Math.max(0, window.scrollY / (window.innerHeight*0.9))); heroCv.style.transform = 'scale('+(1 + p*0.22).toFixed(4)+') rotate('+(p*5).toFixed(2)+'deg)'; };
+    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  }
+
+  // NAVEGAÇÃO
+  const labels = [...document.querySelectorAll('.q-label')];
+  const items = [...document.querySelectorAll('#indice li')];
+  const filtros = [...document.querySelectorAll('.filtro')];
+  const passos = [...document.querySelectorAll('.passo')];
+  const tit = document.getElementById('navTitulo'), exp = document.getElementById('navExp');
+  const STEPS = [
+    ['O visitante chega e vê o emblema inteiro.','Nada se mexe sozinho além da luz. O nome e o menu do topo já mostram os quatro universos para quem tem pressa.'],
+    ['Ao rolar, o emblema se divide em quatro universos.','Cada quadrante é uma área do portfólio. Passar o cursor acende o quadrante; clicar filtra a lista de projetos.'],
+    ['O índice lista todos os projetos com tipo e situação.','Clique em um quadrante ou em um filtro. No site final, cada linha abre a página do case.']
+  ];
+  let filtro = 'all';
+  function aplicaFiltro(f){
+    filtro = f;
+    filtros.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.f===String(f))));
+    items.forEach(li => { li.hidden = !(f==='all' || li.dataset.u===String(f)); });
+    nav.st.active = f==='all' ? -1 : +f;
+    labels.forEach(l => l.classList.toggle('on', +l.dataset.q === nav.st.active));
+    nav.kick();
+  }
+  function posLabels(){
+    const g = nav.geom(), sp = nav.st.split, sc = 1 - sp*0.14;
+    labels.forEach(l=>{
+      const q = +l.dataset.q, d = QDIR[q];
+      const dist = g.R*0.62*sc + sp*g.R*0.16 + g.R*0.18;
+      const x = g.cx + d[0]*dist, y = g.cy + d[1]*dist;
+      l.style.left = (x/g.W*100)+'%'; l.style.top = (y/g.H*100)+'%';
+      l.style.opacity = Math.max(0, (sp-0.35)/0.65).toFixed(3);
+    });
+  }
+  const nav = Emblem(document.getElementById('emblemaNav'), {
+    assemble:false, scale:0.36,
+    onLayout: () => posLabels(),
+    onHover: q => { if(nav.st.split>0.5){ nav.st.hover = q; labels.forEach(l=>l.classList.toggle('on', +l.dataset.q===q || +l.dataset.q===nav.st.active)); } },
+    onPick: q => { if(nav.st.split>0.5) aplicaFiltro(filtro===String(q) ? 'all' : String(q)); }
+  });
+  filtros.forEach(b => b.addEventListener('click', ()=>aplicaFiltro(b.dataset.f)));
+  const box = document.getElementById('navScroll');
+  const mq = window.matchMedia('(max-width:860px)');
+  let passoAtual = -1;
+  function setPasso(i){
+    if(i===passoAtual) return; passoAtual = i;
+    passos.forEach((p,k)=>p.classList.toggle('on', k===i));
+    tit.textContent = STEPS[i][0]; exp.textContent = STEPS[i][1];
+  }
+  function onNavScroll(){
+    let sp, i;
+    if(reduce || mq.matches){ sp = 1; i = 2; }
+    else {
+      const r = box.getBoundingClientRect(), stage = box.querySelector('.nav-sticky').offsetHeight;
+      const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - stage)));
+      const k = Math.min(1, Math.max(0, (p-0.12)/0.4)); sp = k*k*(3-2*k);
+      i = p < 0.15 ? 0 : (p < 0.6 ? 1 : 2);
+    }
+    nav.st.split = sp; setPasso(i); posLabels(); nav.kick();
+  }
+  window.addEventListener('scroll', onNavScroll, {passive:true});
+  mq.addEventListener ? mq.addEventListener('change', onNavScroll) : null;
+
+  // ANATOMIA DO CASE
+  const BLOCOS = [
+    ['Capa','Abre com o título, uma frase sobre o projeto e quatro dados fixos: tipo (profissional, acadêmico, autoral ou conceitual), seu papel, ano e stack. Ao fundo, um emblema de tesselas próprio do projeto, gerado a partir dos dados dele.','Ex.: Emulador Report · Profissional · Dono do produto · 2026 · JavaScript, Playwright'],
+    ['Em 30 segundos','Três linhas para o recrutador com pressa: qual era o problema, qual foi a resposta e o que a diferencia. Quem lê só isto já sai sabendo o essencial.','Ex.: Report refeito todo mês → editor na própria página → conteúdo, forma e canal separados'],
+    ['Vídeo do projeto funcionando','O centro da página. Um vídeo curto do sistema sendo usado de verdade, em loop e sem som, com botão para pausar. Carrega só quando entra na tela, para não pesar.','Ex.: os 4 GIFs do Emulador Report viram vídeos MP4 com capa estática'],
+    ['Demo interativa','Quando o projeto roda no navegador, a demo aparece dentro de uma moldura de notebook ou celular, com opção de tela cheia. A pessoa usa o sistema sem sair do site.','Ex.: docs/demo do Emulador Report · protótipo do FarmTech no Vercel'],
+    ['Como funciona','Os diagramas do repositório redesenhados na paleta do site: fluxo, arquitetura e componentes. Explicam a lógica sem exigir que a pessoa leia código.','Ex.: 7 diagramas do Emulador Report · 7 diagramas do Frota Pulse'],
+    ['Processo e versões','Uma linha do tempo com as decisões principais e o que mudou a cada versão. Mostra o raciocínio, não só o resultado.','Ex.: versões 1.x (HTML à mão) até 5.6 (PF e PJ no mesmo motor)'],
+    ['Minha contribuição','O que foi seu, em frases verificáveis, e como você usou IA no desenvolvimento. Em projeto de grupo, o grupo é citado.','Ex.: “Conduzi o projeto de ponta a ponta como dono do produto” (texto do seu README)'],
+    ['Código e links','Um trecho de código curto e comentado, para mostrar qualidade, e no fim os links para o GitHub e a demo. O link fecha a página; ele não é a página.','Ex.: o motor que separa conteúdo e forma · link para o repositório']
+  ];
+  const fbs = [...document.querySelectorAll('.fb')];
+  fbs.forEach(b => b.addEventListener('click', ()=>{
+    const i = +b.dataset.b;
+    fbs.forEach(x => x.setAttribute('aria-pressed', String(x===b)));
+    document.getElementById('bNum').textContent = 'Bloco '+(i+1)+' de 8';
+    document.getElementById('bTit').textContent = BLOCOS[i][0];
+    document.getElementById('bTxt').textContent = BLOCOS[i][1];
+    document.getElementById('bEx').textContent = BLOCOS[i][2];
+  }));
+
+  const start = () => { hero.start(); nav.start(); onNavScroll(); };
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(start); else start();
+})();
+</script>

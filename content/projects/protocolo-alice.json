@@ -1,0 +1,119 @@
+{
+  "slug": "protocolo-alice",
+  "universe": "marketing",
+  "also": [],
+  "order": 14,
+  "title": "Protocolo Alice",
+  "kind": "Profissional",
+  "context": "Santander · Branded content no Spotify",
+  "year": "mai – jun 2025",
+  "role": "Estratégia de comunicação full funnel",
+  "stack": [
+    "Branded content",
+    "Podcast",
+    "Estratégia full funnel",
+    "Performance",
+    "Segurança digital"
+  ],
+  "keywords": [
+    "podcast de marca",
+    "branded content",
+    "estratégia de comunicação",
+    "full funnel",
+    "marketing de performance",
+    "Spotify",
+    "segurança digital",
+    "phishing",
+    "deepfake",
+    "roubo de identidade"
+  ],
+  "summary": "Podcast de ficção do Santander que transforma temas complexos de segurança digital, como phishing, deepfakes, roubo de identidade e autenticação multifator, em história. Fiz toda a estratégia de comunicação full funnel.",
+  "notice": "Peça veiculada publicamente pelo Santander. Marcas e personagens pertencem aos seus titulares. Projeto realizado como parte do time de marketing do Santander.",
+  "cover": {
+    "src": "capa.png",
+    "w": 444,
+    "h": 450,
+    "small": true
+  },
+  "glance": [
+    {
+      "label": "O projeto",
+      "text": "Protocolo Alice é uma áudio série de ficção científica em oito episódios, produzida pela Podium Podcast. Ela acompanha Alice, que tem a vida transformada depois de ser vítima de um golpe digital sofisticado, e aborda phishing, deepfakes, roubo de identidade e autenticação multifator."
+    },
+    {
+      "label": "O desafio",
+      "text": "Levar um tema de segurança digital para um formato de entretenimento e fazer o público encontrar, ouvir e acompanhar uma série de marca até o fim."
+    },
+    {
+      "label": "Minha parte",
+      "text": "Toda a estratégia de comunicação full funnel do podcast: como gerar descoberta, levar o público ao Spotify e manter a audiência ao longo dos episódios, com estratégia de performance."
+    }
+  ],
+  "embed": {
+    "type": "spotify",
+    "src": "https://open.spotify.com/embed/show/6dhqwX9T0wOgVa4374hPbC?utm_source=generator",
+    "title": "Protocolo Alice no Spotify",
+    "height": 352
+  },
+  "videos": [],
+  "sections": [
+    {
+      "title": "Por que um podcast",
+      "paragraphs": [
+        "Segurança digital costuma ser comunicada com alertas e listas de cuidados. O Protocolo Alice faz o contrário: conta uma história. A ficção científica cria um contexto em que o ouvinte acompanha as consequências de um golpe pelos olhos da personagem.",
+        "Para a marca, isso é branded content de longa duração, num canal em que o público escolhe ouvir, em vez de uma peça que interrompe."
+      ]
+    },
+    {
+      "title": "O funil da comunicação",
+      "list": [
+        "Descoberta (awareness): apresentar a série e o tema para quem nunca ouviu falar dela.",
+        "Consideração: levar o público até o Spotify e fazer o primeiro episódio ser ouvido.",
+        "Engajamento: manter a audiência ao longo dos oito episódios.",
+        "Performance: planejamento e otimização das campanhas de divulgação."
+      ]
+    }
+  ],
+  "gallery": [],
+  "diagrams": [],
+  "timeline": [],
+  "contribution": {
+    "lead": "Fiz toda a estratégia de comunicação full funnel do Protocolo Alice, num projeto com contribuição de Vitor, Caio e outras pessoas do time de marketing do Santander.",
+    "items": [
+      [
+        "Estratégia",
+        "Planejamento da comunicação em todas as etapas do funil, da descoberta ao engajamento com a série."
+      ],
+      [
+        "Performance",
+        "Estratégia de performance das campanhas de divulgação."
+      ]
+    ]
+  },
+  "code": null,
+  "facts": [
+    [
+      "Formato",
+      "Áudio série de ficção"
+    ],
+    [
+      "Episódios",
+      "8"
+    ],
+    [
+      "Canal",
+      "Spotify"
+    ],
+    [
+      "Produção",
+      "Podium Podcast"
+    ]
+  ],
+  "links": [
+    [
+      "Ouvir no Spotify",
+      "https://open.spotify.com/show/6dhqwX9T0wOgVa4374hPbC"
+    ]
+  ],
+  "logo": "santander.svg"
+}

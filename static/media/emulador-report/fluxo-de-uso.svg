@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 372" width="1200" height="372" role="img" aria-labelledby="t d">
+<title id="t">Fluxo de uso: o mês em sete passos</title>
+<desc id="d">Sequência de uso dos emuladores, do arquivo aberto ao e-mail-resumo.</desc>
+<defs><marker id="ponta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5D6270"/></marker></defs>
+<rect width="1200" height="372" rx="18" fill="#F7F5F0"/>
+<text x="32" y="44" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#14161B">Fluxo de uso: o mês em sete passos</text>
+<rect x="32" y="96" width="142" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<circle cx="62" cy="126" r="15" fill="#2D5BFF"/><text x="62" y="131" text-anchor="middle" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">1</text>
+<text x="48" y="176" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#14161B">Abrir</text>
+<text x="48" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">modelo em branco</text>
+<text x="48" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">ou report salvo</text>
+<path d="M176,171 L194,171" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="196" y="96" width="142" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<circle cx="226" cy="126" r="15" fill="#2D5BFF"/><text x="226" y="131" text-anchor="middle" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">2</text>
+<text x="212" y="176" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#14161B">Editar</text>
+<text x="212" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">textos, números</text>
+<text x="212" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">e etiquetas</text>
+<path d="M340,171 L358,171" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="360" y="96" width="142" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<circle cx="390" cy="126" r="15" fill="#2D5BFF"/><text x="390" y="131" text-anchor="middle" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">3</text>
+<text x="376" y="176" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#14161B">Organizar</text>
+<text x="376" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">novo item, arrastar,</text>
+<text x="376" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">mover, seções</text>
+<path d="M504,171 L522,171" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="524" y="96" width="142" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<circle cx="554" cy="126" r="15" fill="#2D5BFF"/><text x="554" y="131" text-anchor="middle" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">4</text>
+<text x="540" y="176" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#14161B">Mídia</text>
+<text x="540" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">imagens, vídeos</text>
+<text x="540" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">e links</text>
+<path d="M668,171 L686,171" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="688" y="96" width="142" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<circle cx="718" cy="126" r="15" fill="#2D5BFF"/><text x="718" y="131" text-anchor="middle" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">5</text>
+<text x="704" y="176" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#14161B">Conferir</text>
+<text x="704" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">prévia no computador</text>
+<text x="704" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">e no celular</text>
+<path d="M832,171 L850,171" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="852" y="96" width="142" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<circle cx="882" cy="126" r="15" fill="#2D5BFF"/><text x="882" y="131" text-anchor="middle" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">6</text>
+<text x="868" y="176" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#14161B">Salvar</text>
+<text x="868" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">um .html só,</text>
+<text x="868" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">tudo embutido</text>
+<path d="M996,171 L1014,171" fill="none" stroke="#5D6270" stroke-width="1.8" marker-end="url(#ponta)"/>
+<rect x="1016" y="96" width="142" height="150" rx="14" fill="#FFFFFF" stroke="#DCD7CD" stroke-width="1.5"/>
+<circle cx="1046" cy="126" r="15" fill="#0F8A7E"/><text x="1046" y="131" text-anchor="middle" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">7</text>
+<text x="1032" y="176" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#14161B">E-mail</text>
+<text x="1032" y="202" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">resumo com até 4</text>
+<text x="1032" y="221" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13" fill="#5D6270">destaques · .eml</text>
+<rect x="32" y="268" width="1136" height="64" rx="14" fill="#E8EEFF" stroke="#C9D6FF" stroke-width="1.5"/>
+<text x="48" y="305" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" fill="#5D6270">Desfazer e Refazer em todos os passos · a edição fica guardada no navegador até salvar (Recuperar a edição) · a mesma sequência no PF e no PJ</text>
+</svg>

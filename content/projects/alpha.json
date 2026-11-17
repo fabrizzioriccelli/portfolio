@@ -1,0 +1,135 @@
+{
+  "slug": "alpha",
+  "universe": "design",
+  "also": [],
+  "order": 20,
+  "title": "Alpha",
+  "kind": "Identidade visual",
+  "context": "Branding · Engenharia civil",
+  "year": "2023",
+  "role": "Identidade visual e aplicações",
+  "stack": [
+    "Branding",
+    "Identidade visual",
+    "Sistema visual",
+    "Papelaria",
+    "Mockups"
+  ],
+  "keywords": [
+    "branding",
+    "identidade visual",
+    "sistema visual",
+    "direção de arte",
+    "papelaria",
+    "engenharia civil"
+  ],
+  "summary": "Identidade visual para a Alpha, uma empresa de engenharia civil: símbolo, paleta laranja, branco e grafite, sistema gráfico e aplicações da papelaria ao canteiro de obras.",
+  "notice": "Projeto publicado no Behance em março de 2023.",
+  "cover": {
+    "src": "alpha-04.jpg",
+    "w": 1200,
+    "h": 900
+  },
+  "glance": [
+    {
+      "label": "A marca",
+      "text": "A Alpha atua em construção residencial e comercial, infraestrutura, projetos arquitetônicos e gerenciamento de obras. O posicionamento: engenharia civil de qualidade."
+    },
+    {
+      "label": "O sistema",
+      "text": "Um “a” minúsculo como símbolo, linhas contínuas que lembram plantas e trajetos, módulos geométricos e uma paleta de laranja, branco e grafite."
+    },
+    {
+      "label": "As aplicações",
+      "text": "Papelaria, capacete e crachá, tapume de obra, cartazes e peças de comunicação."
+    }
+  ],
+  "videos": [],
+  "sections": [],
+  "gallery": [
+    {
+      "src": "alpha-02.jpg",
+      "w": 1200,
+      "h": 675,
+      "caption": "Paleta: laranja, branco e grafite."
+    },
+    {
+      "src": "alpha-14.jpg",
+      "w": 1200,
+      "h": 900,
+      "caption": "Sistema visual: linha contínua, módulos e símbolo."
+    },
+    {
+      "src": "alpha-07.jpg",
+      "w": 1200,
+      "h": 675,
+      "caption": "Capacete e crachá."
+    },
+    {
+      "src": "alpha-12.jpg",
+      "w": 1200,
+      "h": 800,
+      "caption": "Tapume de obra: “Estamos em obra para melhorar o seu futuro”."
+    },
+    {
+      "src": "alpha-09.jpg",
+      "w": 1200,
+      "h": 675,
+      "caption": "Cartazes."
+    },
+    {
+      "src": "alpha-03.gif",
+      "w": 1200,
+      "h": 675,
+      "caption": "Animação do sistema."
+    },
+    {
+      "src": "alpha-05.jpg",
+      "w": 1200,
+      "h": 900,
+      "caption": "Aplicação da identidade."
+    },
+    {
+      "src": "alpha-08.jpg",
+      "w": 1200,
+      "h": 800,
+      "caption": "Aplicação da identidade."
+    },
+    {
+      "src": "alpha-10.jpg",
+      "w": 1200,
+      "h": 900,
+      "caption": "Aplicação da identidade."
+    },
+    {
+      "src": "alpha-13.jpg",
+      "w": 1200,
+      "h": 801,
+      "caption": "Aplicação da identidade."
+    },
+    {
+      "src": "alpha-15.jpg",
+      "w": 1200,
+      "h": 900,
+      "caption": "Aplicação da identidade."
+    },
+    {
+      "src": "alpha-16.gif",
+      "w": 1200,
+      "h": 675,
+      "caption": "Animação do símbolo."
+    }
+  ],
+  "diagrams": [],
+  "timeline": [],
+  "contribution": null,
+  "code": null,
+  "facts": [],
+  "links": [
+    [
+      "Ver no Behance",
+      "https://www.behance.net/gallery/166004165/Alpha"
+    ]
+  ],
+  "logo": "alpha.png"
+}
