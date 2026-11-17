@@ -9,7 +9,8 @@ Só usa a biblioteca padrão do Python (3.11+). O build:
 - valida o conteúdo e a mídia citada nos JSON;
 - versiona CSS e JS pelo hash do conteúdo (cache de 1 ano sem servir arquivo velho);
 - reduz HTML e CSS;
-- gera sitemap.xml, robots.txt e os cabeçalhos de segurança (vercel.json).
+- gera sitemap.xml, robots.txt e os cabeçalhos de segurança (vercel.json);
+- copia sem alterar os arquivos de raiz/ para a raiz do site.
 """
 from __future__ import annotations
 
@@ -30,6 +31,7 @@ from site_src.components import document
 ROOT = Path(__file__).resolve().parent
 CONTENT = ROOT / "content"
 STATIC = ROOT / "static"
+RAIZ = ROOT / "raiz"  # arquivos copiados sem alteração para a raiz do site (ex.: verificação do Google)
 DIST = ROOT / "dist"
 
 # ── segurança ────────────────────────────────────────────────────────────────
@@ -257,6 +259,10 @@ def build():
     (DIST / ".well-known" / "security.txt").write_text(
         f"Contact: {site['links'].get('linkedin') or site['links']['github']}\nPreferred-Languages: pt, en\n"
         f"Expires: {(dt.date.today() + dt.timedelta(days=365)).isoformat()}T00:00:00Z\n", "utf-8")
+    if RAIZ.is_dir():
+        for f in RAIZ.iterdir():
+            if f.is_file() and not f.name.startswith("."):
+                shutil.copy2(f, DIST / f.name)
     write_vercel_config()
     size = sum(f.stat().st_size for f in DIST.rglob("*.html") if "demos" not in f.parts) // 1024
     print(f"OK: {len(urls)} páginas em {DIST.relative_to(ROOT)}/ ({size} KB de HTML)")
