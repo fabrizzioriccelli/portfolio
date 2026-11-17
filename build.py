@@ -219,7 +219,7 @@ def build():
     name = site["name"]
     page("index.html", "/", name, site["description"],
          lambda r: pages.home(site, projects, r, year), scripts=("columns-gl.js", "reel.js", "home.js"),
-         og="static/media/emulador-report/overview.jpg", ld=person_ld(site), cls="home")
+         og="static/media/og-home.jpg", ld=person_ld(site), cls="home")
 
     for u in site["universes"]:
         if u["id"] == "sobre":
