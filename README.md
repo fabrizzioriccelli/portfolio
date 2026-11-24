@@ -1,5 +1,9 @@
 # Portfólio · Fabrizzio Riccelli
 
+**Site:** [fabrizzioriccelli.com.br](https://fabrizzioriccelli.com.br)
+
+> **English.** Source of my portfolio site. A static site generator written in standard-library Python turns JSON content into HTML; the front end is vanilla CSS and JavaScript with a hand-written WebGL hero, and the build emits strict security headers for Vercel. Run it with `python3 build.py --serve` (Python 3.11+). The rest of this README is in Portuguese.
+
 Site estático com a identidade **Tessera**: mármore, pedra, tinta e uma única cor viva (cinábrio). O texto usa a San Francisco do sistema Apple, e a inscrição romana (Marcellus SC) aparece só no nome e nos numerais. No topo, um pórtico de colunas romanas em 3D; o site inteiro usa um mesmo material de vidro líquido.
 
 ## Por que esta stack
@@ -58,11 +62,11 @@ O `vercel.json` é gerado pelo build com os cabeçalhos de segurança e de cache
 
 ## Pendências de conteúdo
 
-- [ ] `base_url` (domínio final)
+- [x] `base_url` (domínio final)
 - [ ] Currículo para download em `content/site.json` → `links.cv`
 - [ ] Três cases conceituais de Design
 - [ ] FarmTech: descrição da participação
-- [ ] Frota Pulse: link do repositório, se ele voltar a ser público
+- [x] Frota Pulse: links dos repositórios das Sprints 1 e 2
 - [ ] Imagens de FastCo Money e Select Global, se surgirem
 
 ## Desempenho

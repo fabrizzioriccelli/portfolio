@@ -129,7 +129,16 @@
       "Sprint 1 · planejamento"
     ]
   ],
-  "links": [],
+  "links": [
+    [
+      "Repositório da Sprint 1",
+      "https://github.com/fabrizzioriccelli/frota-pulse-sprint-1"
+    ],
+    [
+      "Continuação: Sprint 2",
+      "https://github.com/fabrizzioriccelli/frota-pulse-sprint-2"
+    ]
+  ],
   "thumb": "wf-01-primeira-estimativa.png",
   "logo": "fiap.jpg"
 }
